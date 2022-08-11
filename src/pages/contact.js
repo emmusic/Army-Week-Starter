@@ -12,6 +12,7 @@ import Alert from '@mui/material/Alert';
 import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
+import Snackbar from '@mui/material/Snackbar';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -29,9 +30,14 @@ const Contact = () => {
       //need to add logic to actually submit the question
       
       //if success
-      setSuccessOpen(true);
+      // setSuccessOpen(true);
       //if error
-      // setErrorOpen(true);
+      setErrorOpen(true);
+    };
+
+    const handleClose = () => {
+      setSuccessOpen(false);
+      setErrorOpen(false);
     };
 
   return(
@@ -43,30 +49,13 @@ const Contact = () => {
                     <h2>Contact Support</h2>
                 </Item>
             </Grid>
-
-{/* Success alert */}
-            <Box sx={{ width: '100%' }}>
-              <Collapse in={successOpen}>
-                <Alert
-                action={
-                  <IconButton
-                    aria-label="close"
-                    color="inherit"
-                    size="small"
-                    onClick={() => {
-                      setSuccessOpen(false);
-                    }}
-                  >
-                    <CloseIcon fontSize="inherit" />
-                  </IconButton>
-                  }
-                  sx={{ mb: 2 }}
-                >
-                Your question has been submitted!
-                </Alert>
-              </Collapse>
-            </Box>
-{/* Error Alert */}
+{/* Success message */}
+            <Snackbar open={successOpen} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                Your question was submitted!
+            </Alert>
+            </Snackbar>
+{/* Error Message */}
             <Box sx={{ width: '100%' }}>
               <Collapse in={errorOpen}>
                 <Alert severity = "error"

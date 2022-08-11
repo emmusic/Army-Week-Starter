@@ -13,11 +13,11 @@ import { deepOrange, deepPurple, lightGreen } from '@mui/material/colors';
 import { green, pink } from '@mui/material/colors';
 import FolderIcon from '@mui/icons-material/Folder';
 import PageviewIcon from '@mui/icons-material/Pageview';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 import { DownloadRounded } from "@mui/icons-material";
 import Alert from '@mui/material/Alert';
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
+import Snackbar from '@mui/material/Snackbar';
 
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -34,11 +34,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Fab from '@mui/material/Fab';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import MenuIcon from '@mui/icons-material/Menu';
 import AddIcon from '@mui/icons-material/Add';
 import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
@@ -71,15 +67,28 @@ const SelectedEventText = [
 
 function SelectedEvent() {
   const [successOpen, setSuccessOpen] = React.useState(false);
+  const [eventFullOpen, setEventFullOpen] = React.useState(false);
+  const [datePastOpen, setDatePastOpen] = React.useState(false);
   const [errorOpen, setErrorOpen] = React.useState(false);
 
   const Register = event => {
-    //need to add logic to actually register the user for the event in question
+    //need to add logic to register user to specified event
     
-    //if success
-    setSuccessOpen(true);
-    //if error
+    // if success
+     setSuccessOpen(true);
+    // if event is full
+    // setEventFullOpen(true);
+    //if event has already happened
+    // setDatePastOpen(true);
+    //if other error
     // setErrorOpen(true);
+  };
+
+  const handleClose = () => {
+    setSuccessOpen(false);
+    setEventFullOpen(false);
+    setDatePastOpen(false);
+    setErrorOpen(false);
   };
 
     return (
@@ -113,28 +122,24 @@ function SelectedEvent() {
 
     </Grid>
 
-{/* Success alert */}
-            <Box sx={{ width: '100%' }}>
-              <Collapse in={successOpen}>
-                <Alert
-                action={
-                  <IconButton
-                    aria-label="close"
-                    color="inherit"
-                    size="small"
-                    onClick={() => {
-                      setSuccessOpen(false);
-                    }}
-                  >
-                    <CloseIcon fontSize="inherit" />
-                  </IconButton>
-                  }
-                  sx={{ mb: 2 }}
-                >
-                Registration Successful!
-                </Alert>
-              </Collapse>
-            </Box>
+{/* Success message */}
+          <Snackbar open={successOpen} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                You are now registered!
+            </Alert>
+          </Snackbar>
+{/* Event full */}
+          <Snackbar open={eventFullOpen} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                The event is full!
+            </Alert>
+          </Snackbar>
+{/* Event already happened */}
+          <Snackbar open={datePastOpen} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                This event is in the past!
+            </Alert>
+          </Snackbar>
 {/* Error Alert */}
             <Box sx={{ width: '100%' }}>
               <Collapse in={errorOpen}>
