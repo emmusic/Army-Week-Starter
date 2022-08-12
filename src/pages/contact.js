@@ -30,9 +30,9 @@ const Contact = () => {
       //need to add logic to actually submit the question
       
       //if success
-      // setSuccessOpen(true);
+       setSuccessOpen(true);
       //if error
-      setErrorOpen(true);
+      // setErrorOpen(true);
     };
 
     const handleClose = () => {

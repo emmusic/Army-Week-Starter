@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import RegisterButton from "../components/registerButton"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -43,6 +44,10 @@ import HomeIcon from '@mui/icons-material/Home';
 import { QrCodeScanner } from "@mui/icons-material";
 import { MdOutlineHelp} from "react-icons/md";
 import AddTaskIcon from '@mui/icons-material/AddTask';
+import Alert from '@mui/material/Alert';
+import Collapse from '@mui/material/Collapse';
+import CloseIcon from '@mui/icons-material/Close';
+import Snackbar from '@mui/material/Snackbar';
 
 
 const LookupMaterialsText = [
@@ -63,6 +68,7 @@ const LookupMaterialsText = [
 
 
 function LookupMaterials() {
+
     return (
 
         <Layout>
@@ -97,7 +103,6 @@ function LookupMaterials() {
 
     </Grid>
 
-
           <h5>Lookup Materials</h5>
               {/* <h4>
                 Defense in the Digital Age
@@ -105,6 +110,7 @@ function LookupMaterials() {
                <p>
                {""}
                 </p>
+                <RegisterButton />
 
 
                <React.Fragment>
@@ -193,12 +199,7 @@ function LookupMaterials() {
                 Check in
               </Button>
 
-              <Button variant="contained"
-                href="/selectedEvent"
-                sx={{ bgcolor: green[500] }}
-                endIcon={< AddTaskIcon />}>
-                Register Now
-              </Button>
+              {/* <RegisterButton /> */}
 
 
               <Button variant="contained"

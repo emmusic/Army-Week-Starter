@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import RegisterButton from "../components/registerButton"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -14,10 +15,6 @@ import { green, pink } from '@mui/material/colors';
 import FolderIcon from '@mui/icons-material/Folder';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import { DownloadRounded } from "@mui/icons-material";
-import Alert from '@mui/material/Alert';
-import Collapse from '@mui/material/Collapse';
-import CloseIcon from '@mui/icons-material/Close';
-import Snackbar from '@mui/material/Snackbar';
 
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -41,9 +38,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import HomeIcon from '@mui/icons-material/Home';
 import { MdOutlineHelp} from "react-icons/md";
 import { QrCodeScanner } from "@mui/icons-material";
-import AddTaskIcon from '@mui/icons-material/AddTask';
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
-
 
 
 const SelectedEventText = [
@@ -66,31 +61,6 @@ const SelectedEventText = [
 
 
 function SelectedEvent() {
-  const [successOpen, setSuccessOpen] = React.useState(false);
-  const [eventFullOpen, setEventFullOpen] = React.useState(false);
-  const [datePastOpen, setDatePastOpen] = React.useState(false);
-  const [errorOpen, setErrorOpen] = React.useState(false);
-
-  const Register = event => {
-    //need to add logic to register user to specified event
-    
-    // if success
-     setSuccessOpen(true);
-    // if event is full
-    // setEventFullOpen(true);
-    //if event has already happened
-    // setDatePastOpen(true);
-    //if other error
-    // setErrorOpen(true);
-  };
-
-  const handleClose = () => {
-    setSuccessOpen(false);
-    setEventFullOpen(false);
-    setDatePastOpen(false);
-    setErrorOpen(false);
-  };
-
     return (
 
         <Layout>
@@ -122,59 +92,12 @@ function SelectedEvent() {
 
     </Grid>
 
-{/* Success message */}
-          <Snackbar open={successOpen} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                You are now registered!
-            </Alert>
-          </Snackbar>
-{/* Event full */}
-          <Snackbar open={eventFullOpen} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                The event is full!
-            </Alert>
-          </Snackbar>
-{/* Event already happened */}
-          <Snackbar open={datePastOpen} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                This event is in the past!
-            </Alert>
-          </Snackbar>
-{/* Error Alert */}
-            <Box sx={{ width: '100%' }}>
-              <Collapse in={errorOpen}>
-                <Alert severity = "error"
-                action={
-                  <IconButton
-                    aria-label="close"
-                    color="inherit"
-                    size="small"
-                    onClick={() => {
-                      setErrorOpen(false);
-                    }}
-                  >
-                    <CloseIcon fontSize="inherit" />
-                  </IconButton>
-                  }
-                  sx={{ mb: 2 }}
-                >
-                There was an error in processing your registration.
-                </Alert>
-              </Collapse>
-            </Box>
-
-
           <h5>Selected Event - Details and Registration</h5>
               <h1>
                 Defense in the Digital Age
             </h1>
 
-            <Button variant="contained"
-                onClick = {Register}
-                sx={{ bgcolor: green[500] }}
-                endIcon={< AddTaskIcon />}>
-                Register Now
-              </Button>
+            <RegisterButton />
 
             <React.Fragment>
       <CssBaseline />
