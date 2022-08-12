@@ -49,8 +49,6 @@ import AddTaskIcon from '@mui/icons-material/AddTask';
 import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 
 
-
-
   const StyledFab = styled(Fab)({
     position: 'absolute',
     zIndex: 1,
@@ -61,61 +59,31 @@ import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
   });
 
 
-
-
-
 function CheckInNow() {
     return (
 
         <Layout>
 
-    {/* <Grid container justify="flex-end">
-
-<Stack direction="row" spacing={2} alignItems="flex-end">
-      <Avatar sx={{ bgcolor: deepPurple[500] }}
-
-        > JB
-         </Avatar>
-          <Stack
-            direction="row"
-            spacing={3}
-            alignItems="flex-end"
-            justifyContent="space-evenly" >
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <FolderIcon />
-                </Avatar>
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <PageviewIcon />
-                </Avatar>
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <DownloadRounded />
-                </Avatar>
-
-
-            </Stack>
-             </Stack>
-
-    </Grid> */}
   <h5>
           Check In Now </h5>
 
                <p>
-               {"Use your phone to scan the QR code:"}
+               {"Push to scan the QR code:"}
                 </p>
 
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="viewport"
+    content="width=device-width; initial-scale=1.0;
+    maximum-scale=1.0; user-scalable=0;" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
   </head>
   <body>
     <div id="container">
-
-            <Container maxWidth="xl">
+      <a id="btn-scan-qr">
+            {/* <Container maxWidth="xl">
 
             <QrCodeScanner
 
@@ -126,10 +94,9 @@ function CheckInNow() {
             fontSize: "200px"}}>
 
               </QrCodeScanner>
-
-
-            </Container>
-
+            </Container> */}
+          <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg"></img>
+      </a>
 
       <canvas hidden="" id="qr-canvas"></canvas>
 
@@ -170,7 +137,7 @@ function CheckInNow() {
 
     <p> {""}</p>
 
-            <Stack spacing={4} direction="row"
+            <Stack spacing={3} direction="row"
             alignItems="center"
             justifyContent="space-evenly"
             >
