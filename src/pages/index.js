@@ -3,10 +3,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
+import { QrCodeScanner } from "@mui/icons-material";
 
 const links = [
   {
@@ -36,6 +38,7 @@ const samplePageLinks = [
     badge: true
   },
 { text: "Profile", url: "Profile" },
+{ text: "Check in now", url: "check-in-now"},
 { text: "Calendar", url: "Calendar" },
 { text: "Lookup Materials", url: "lookup-materials" },
 { text: "FAQ", url: "faq" },
@@ -74,6 +77,7 @@ const IndexPage = () => (
         alt=""
         style={{ marginTop: `var(--space-1)` }}
       />
+
       <h1>
       <b> Welcome to Army Week</b>
       </h1>
@@ -112,12 +116,9 @@ const IndexPage = () => (
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
     ))}
-    
+
   </Layout>
 )
-
-
-
 
 const Head = () => <Seo title="Home" />
 
