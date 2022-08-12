@@ -9,6 +9,7 @@ import React from 'react';
 import IconButton from '@mui/material/IconButton';
 import { deepPurple, green } from '@mui/material/colors';
 import AddTaskIcon from '@mui/icons-material/AddTask';
+import Stack from '@mui/material/Stack';
 
 function RegisterButton() {
     const [errorOpen, setErrorOpen] = React.useState(false);
@@ -36,12 +37,15 @@ function RegisterButton() {
         setErrorOpen(false);
     };
     return(
-        <Box sx={{ width: '100%' }}>
+        <Stack spacing={4} direction="row"
+        alignItems="center"
+        justifyContent="center"
+        >
         <Button variant="contained"
         onClick={Register}
         sx={{ bgcolor: green[500] }}
         endIcon={< AddTaskIcon />}>
-        Register Now
+        Register
       </Button>
 {/* Success message */}
         <Snackbar open={successOpen} autoHideDuration={6000} onClose={handleClose}>
@@ -83,7 +87,7 @@ function RegisterButton() {
             </Alert>
           </Collapse>
         </Box>
-        </Box>
+        </Stack>
     )
 }
 

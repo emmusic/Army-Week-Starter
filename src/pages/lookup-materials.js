@@ -68,30 +68,6 @@ const LookupMaterialsText = [
 
 
 function LookupMaterials() {
-  const [successOpen, setSuccessOpen] = React.useState(false);
-  const [eventFullOpen, setEventFullOpen] = React.useState(false);
-  const [datePastOpen, setDatePastOpen] = React.useState(false);
-  const [errorOpen, setErrorOpen] = React.useState(false);
-
-  const Register = event => {
-    //need to add logic to register user to specified event
-    
-    // if success
-     setSuccessOpen(true);
-    // if event is full
-    // setEventFullOpen(true);
-    //if event has already happened
-    // setDatePastOpen(true);
-    //if other error
-    // setErrorOpen(true);
-  };
-
-  // const handleClose = () => {
-  //   setSuccessOpen(false);
-  //   setEventFullOpen(false);
-  //   setDatePastOpen(false);
-  //   setErrorOpen(false);
-  // };
 
     return (
 
@@ -126,47 +102,6 @@ function LookupMaterials() {
              </Stack>
 
     </Grid>
-{/* Success message */}
-    {/* <Snackbar open={successOpen} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                You are now registered!
-            </Alert>
-          </Snackbar> */}
-{/* Event full */}
-          {/* <Snackbar open={eventFullOpen} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                The event is full!
-            </Alert>
-          </Snackbar> */}
-{/* Event already happened */}
-          {/* <Snackbar open={datePastOpen} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-                This event is in the past!
-            </Alert>
-          </Snackbar> */}
-{/* Error Alert */}
-            {/* <Box sx={{ width: '100%' }}>
-              <Collapse in={errorOpen}>
-                <Alert severity = "error"
-                action={
-                  <IconButton
-                    aria-label="close"
-                    color="inherit"
-                    size="small"
-                    onClick={() => {
-                      setErrorOpen(false);
-                    }}
-                  >
-                    <CloseIcon fontSize="inherit" />
-                  </IconButton>
-                  }
-                  sx={{ mb: 2 }}
-                >
-                There was an error in processing your registration.
-                </Alert>
-              </Collapse>
-            </Box> */}
-
 
           <h5>Lookup Materials</h5>
               {/* <h4>
@@ -175,6 +110,7 @@ function LookupMaterials() {
                <p>
                {""}
                 </p>
+                <RegisterButton />
 
 
                <React.Fragment>
@@ -263,7 +199,7 @@ function LookupMaterials() {
                 Check in
               </Button>
 
-              <RegisterButton />
+              {/* <RegisterButton /> */}
 
 
               <Button variant="contained"
