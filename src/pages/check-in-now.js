@@ -1,11 +1,10 @@
 
 
 import * as React from "react"
-import { Link } from "gatsby"
+
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-
+import { Html } from "@mui/icons-material";
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -70,9 +69,8 @@ function CheckInNow() {
 
         <Layout>
 
+    {/* <Grid container justify="flex-end">
 
-    <Grid container justify="flex-end">
-    < ChevronLeftSharp />
 <Stack direction="row" spacing={2} alignItems="flex-end">
       <Avatar sx={{ bgcolor: deepPurple[500] }}
 
@@ -100,34 +98,49 @@ function CheckInNow() {
             </Stack>
              </Stack>
 
-    </Grid>
-
-          <h5>
-
+    </Grid> */}
+  <h5>
           Check In Now </h5>
 
                <p>
                {"Use your phone to scan the QR code:"}
                 </p>
 
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div id="container">
 
-     <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="xl">
+            <Container maxWidth="xl">
 
-        <QrCodeScanner
+            <QrCodeScanner
 
-        size="large"
-        aria-label="add"
-        sx={{display: "flex",
-        justifyContent: "center",
-        fontSize: "200px"}}>
+            size="large"
+            aria-label="add"
+            sx={{display: "flex",
+            justifyContent: "center",
+            fontSize: "200px"}}>
 
-          </QrCodeScanner>
+              </QrCodeScanner>
 
 
-      </Container>
-    </React.Fragment>
+            </Container>
+
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="">
+        <b>Data:</b> <span id="outputData"></span>
+      </div>
+    </div>
+    <script src="./src/qrCodeScanner.js"></script>
+  </body>
+</html>
+
 
 
 {/* bottom toolbar */}
@@ -179,28 +192,14 @@ function CheckInNow() {
 
             </Stack>
 
-            <p> {""}
-            </p>
-
-            <p> {""}
-            </p>
-
-
-            <p> {""}
-            </p>
-
-
-            <IconButton  >
+            {/* <IconButton  >
             <Link to="/">
                < HomeIcon sx={{ color: deepPurple[500], fontSize: 40 }} />
              </Link>
-          </IconButton>
+          </IconButton> */}
         </Layout>
     );
-
 }
 
-
-export const Head = () => <Seo title="Check In Now" />
 
 export default CheckInNow
