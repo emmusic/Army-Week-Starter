@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RegisterButton from "../components/registerButton"
+import Bottombar from "../components/bottombar"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -24,9 +25,6 @@ import Container from '@mui/material/Container';
 
 import Grid from "@mui/material/Grid";
 
-
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Fab from '@mui/material/Fab';
@@ -136,38 +134,8 @@ function SelectedEvent() {
         </List>
       </Paper>
 
-{/* bottom toolbar */}
-      <AppBar position="fixed" color="success" sx={{ top: 'auto', bottom: 0 }}>
-         <Toolbar>
+<Bottombar />
 
-         <IconButton color="inherit" href="/faq" >
-               < MdOutlineHelp />
-          </IconButton>
-
-          <IconButton color="inherit" href="/check-in-now" >
-               < QrCodeScanner />
-          </IconButton>
-
-
-          <StyledFab color="secondary" aria-label="add">
-            <AddIcon />
-          </StyledFab>
-          <Box sx={{ flexGrow: 9 }} />
-
-
-
-          <IconButton color="inherit">
-            <SearchIcon />
-
-
-          </IconButton>
-          <IconButton color="inherit">
-            <MoreIcon />
-          </IconButton>
-
-
-        </Toolbar>
-      </AppBar>
     </React.Fragment>
 
 
@@ -227,11 +195,6 @@ function SelectedEvent() {
             <p> {""}
             </p>
 
-            <IconButton  >
-            <Link to="/">
-               < HomeIcon sx={{ color: deepPurple[500], fontSize: 40 }} />
-             </Link>
-          </IconButton>
         </Layout>
     );
 }

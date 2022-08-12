@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RegisterButton from "../components/registerButton"
+import Bottombar from "../components/bottombar"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -138,34 +139,7 @@ function LookupMaterials() {
         </List>
       </Paper>
 
-{/* bottom toolbar */}
-      <AppBar position="fixed" color="success" sx={{ top: 'auto', bottom: 0 }}>
-         <Toolbar>
-
-            <IconButton color="inherit" href="/faq" >
-               < MdOutlineHelp />
-          </IconButton>
-
-          <IconButton color="inherit" href="/check-in-now" >
-               < QrCodeScanner />
-          </IconButton>
-
-          <StyledFab color="secondary" aria-label="add" href="/">
-            <AddIcon />
-          </StyledFab>
-
-          <Box sx={{ flexGrow: 12 }} />
-          <IconButton color="inherit">
-            <SearchIcon />
-          </IconButton>
-
-          <IconButton color="inherit">
-            <MoreIcon />
-          </IconButton>
-
-
-        </Toolbar>
-      </AppBar>
+<Bottombar />
     </React.Fragment>
 
 
@@ -199,9 +173,6 @@ function LookupMaterials() {
                 Check in
               </Button>
 
-              {/* <RegisterButton /> */}
-
-
               <Button variant="contained"
                 sx={{ bgcolor: green[500] }}
                 endIcon={< DownloadRounded />}>
@@ -227,12 +198,6 @@ function LookupMaterials() {
 
             <p> {""}
             </p>
-
-            <IconButton  >
-            <Link to="/">
-               < HomeIcon sx={{ color: deepPurple[500], fontSize: 40 }} />
-             </Link>
-          </IconButton>
         </Layout>
     );
 
