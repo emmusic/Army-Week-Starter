@@ -1,13 +1,13 @@
+import React from 'react';
+
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
 import Snackbar from '@mui/material/Snackbar';
 import Box from '@mui/material/Box';
-import Layout from "../components/layout"
-import React from 'react';
 import IconButton from '@mui/material/IconButton';
-import { deepPurple, green } from '@mui/material/colors';
+import { green } from '@mui/material/colors';
 import AddTaskIcon from '@mui/icons-material/AddTask';
 import Stack from '@mui/material/Stack';
 
