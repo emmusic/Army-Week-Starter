@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RegisterButton from "../components/registerButton"
-import Bottombar from "../components/bottombar"
+import Bottombar from "../components/Bottombar/bottombar"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -20,9 +20,6 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Grid";
-
-
-// bottom bar
 
 import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';

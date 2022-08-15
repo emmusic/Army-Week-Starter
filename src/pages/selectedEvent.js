@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RegisterButton from "../components/registerButton"
-import Bottombar from "../components/bottombar"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -133,8 +132,6 @@ function SelectedEvent() {
           ))}
         </List>
       </Paper>
-
-<Bottombar />
 
     </React.Fragment>
 

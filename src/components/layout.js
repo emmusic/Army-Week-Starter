@@ -9,9 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
-import Bottombar from "./bottombar"
+import Bottombar from "./Bottombar/bottombar"
 import ResponsiveAppBar from "./Navbar/navbar"
 
 const Layout = ({ children }) => {
@@ -28,7 +27,6 @@ const Layout = ({ children }) => {
   return (
     <>
     <ResponsiveAppBar />
-      <Header siteTitle={data.site.siteMetadata?.title || `Army Week`} />
       <div
         style={{
           margin: `0 auto`,
