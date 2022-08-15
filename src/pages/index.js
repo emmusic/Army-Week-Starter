@@ -38,7 +38,7 @@ const samplePageLinks = [
     badge: true
   },
 { text: "Profile", url: "Profile" },
-{ text: "Check in now", url: "check-in-now"},
+{ text: "Check in now", url: "qr-app"},
 { text: "Calendar", url: "Calendar" },
 { text: "Lookup Materials", url: "lookup-materials" },
 { text: "FAQ", url: "faq" },
