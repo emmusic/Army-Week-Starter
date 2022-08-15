@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
-import Bottombar from "./bottombar"
+import Bottombar from "./Bottombar/bottombar"
 import ResponsiveAppBar from "./Navbar/navbar"
 
 const Layout = ({ children }) => {
