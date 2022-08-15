@@ -17,7 +17,7 @@ class QRApp extends Component {
   render () {
     return (
       <Fragment>
-        <h2>Check In Now</h2>
+        <h1>QRScan A Roo</h1>
         {this.state.watching
           ? (
             <QRScan onFind={this.onFind} />
@@ -26,12 +26,13 @@ class QRApp extends Component {
             <Fragment>
               <button onClick={() => this.setState({ watching: true })}>Scan</button>
               <h4>value: {this.state.value}</h4>
+
             </Fragment>
           )
         }
       </Fragment>
-    );
-   }
+    )
+  }
 }
 
-export default  QRApp
+export default QRApp

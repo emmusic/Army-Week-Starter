@@ -4,7 +4,7 @@ import * as React from "react"
 
 
 import Layout from "../components/layout"
-import { Html } from "@mui/icons-material";
+//import { Html } from "@mui/icons-material";
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -69,36 +69,6 @@ function CheckInNow() {
 
         <Layout>
 
-    {/* <Grid container justify="flex-end">
-
-<Stack direction="row" spacing={2} alignItems="flex-end">
-      <Avatar sx={{ bgcolor: deepPurple[500] }}
-
-        > JB
-         </Avatar>
-          <Stack
-            direction="row"
-            spacing={3}
-            alignItems="flex-end"
-            justifyContent="space-evenly" >
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <FolderIcon />
-                </Avatar>
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <PageviewIcon />
-                </Avatar>
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <DownloadRounded />
-                </Avatar>
-
-
-            </Stack>
-             </Stack>
-
-    </Grid> */}
   <h5>
           Check In Now </h5>
 
