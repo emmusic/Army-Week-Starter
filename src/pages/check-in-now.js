@@ -2,56 +2,31 @@
 
 import * as React from "react"
 
-
 import Layout from "../components/layout"
-//import { Html } from "@mui/icons-material";
-//import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
-//import { styled } from '@mui/material/styles';
 import { deepPurple, green } from '@mui/material/colors';
-import FolderIcon from '@mui/icons-material/Folder';
 import { ChevronLeftSharp, DownloadRounded } from "@mui/icons-material";
-import PageviewIcon from '@mui/icons-material/Pageview';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-import Grid from "@mui/material/Grid";
-
 
 // bottom bar
 
 import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
 import Fab from '@mui/material/Fab';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
-
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from '@mui/icons-material/Menu';
-import AddIcon from '@mui/icons-material/Add';
 import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import HomeIcon from '@mui/icons-material/Home';
 import { MdOutlineHelp} from "react-icons/md";
 import { QrCodeScanner } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
-import AddTaskIcon from '@mui/icons-material/AddTask';
-import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 
 
-
-
-  const StyledFab = styled(Fab)({
+const StyledFab = styled(Fab)({
     position: 'absolute',
     zIndex: 1,
     top: -30,

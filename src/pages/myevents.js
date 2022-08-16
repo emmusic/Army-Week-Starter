@@ -1,23 +1,18 @@
 import React from 'react';
 import Layout from "../components/layout"
 
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+//MUI
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
 import { ListItemButton } from '@mui/material';
+import Container from '@mui/material/Container';
 
 //import the events JSON
-var events = require('./events.json');
+var events = require('./events.json').events;
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -28,7 +23,6 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 const MyEvents = () => {
-  var specificEvent = events.filter(event => event.number === 1)
 
   return(
     <Layout>
@@ -45,12 +39,12 @@ const MyEvents = () => {
             {events.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/selectedEvent/${event.number}`}>
+            <ListItemButton href={`/eventDetails/${event.Id}`}>
             <Grid item xs={10}>
-              <ListItemText>{event.name}</ListItemText>
+              <ListItemText>{event.Title}</ListItemText>
               </Grid>
               <Grid item xs={10}>
-              <ListItemText secondary={event.date} />
+              <ListItemText secondary={event.Date} />
               </Grid>
             </ListItemButton>
             </ListItem>
@@ -60,6 +54,14 @@ const MyEvents = () => {
             </Grid>
       </Grid>
     </div>
+    <Container maxWidth="md">
+             <p>
+            </p>
+      </Container>
+      <Container maxWidth="md">
+             <p>
+            </p>
+      </Container>
     </Layout>
   )
 }

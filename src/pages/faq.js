@@ -1,22 +1,15 @@
 import * as React from "react"
 
+//Components
+import Faq from "react-faq-component";
 import Layout from "../components/layout"
 
-// import Footer from '../components/Footer/footer'
-
-//import { Text, View } from 'react-native';
+//MUI
 import Button from '@mui/material/Button';
-// import IconButton from '@mui/material/IconButton';
-// import Avatar from '@mui/material/Avatar';
 import { styled } from '@mui/material/styles';
-// import { deepOrange, deepPurple } from '@mui/material/colors';
-// import { green, pink } from '@mui/material/colors';
-
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-
-import Faq from "react-faq-component";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
