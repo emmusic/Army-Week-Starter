@@ -16,7 +16,7 @@ class QRApp extends Component {
   onFind (value) {
     this.setState({ value, watching: false })
   }
-  
+
 
   render () {
     let message
@@ -42,12 +42,13 @@ class QRApp extends Component {
               <meta charset="UTF-8" />
               <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
               <h4>value: {this.state.value}</h4>
+
             </Fragment>
           )
         }
       </Fragment>
-    );
-   }
+    )
+  }
 }
 
-export default  QRApp
+export default QRApp
