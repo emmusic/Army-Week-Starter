@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import RegisterButton from "../components/registerButton"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
+import RegisterButton from "../../components/registerButton"
 
 //import { Text, View } from 'react-native';
 import Stack from '@mui/material/Stack';
@@ -36,16 +36,11 @@ import HomeIcon from '@mui/icons-material/Home';
 import { MdOutlineHelp} from "react-icons/md";
 import { QrCodeScanner } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
+import * as queryString from "query-string";
 
 
-const SelectedEventText = [
-    {
-      id: 1,
-      primary: 'Defense in the Digital Age and Whatnot',
-//       secondary: "I'll be in the neighbourhood this week. Let's grab a bite to eat",
-//       person: '/static/images/avatar/5.jpg',
-     }
-   ];
+//import the events JSON
+var events = require('../events.json');
 
    const StyledFab = styled(Fab)({
     position: 'absolute',
@@ -57,7 +52,11 @@ const SelectedEventText = [
   });
 
 
-function SelectedEvent() {
+function SelectedEvent(props) {
+  const eventId = props.params.id
+  // I couldn't get the lookup to work, for this line below to work the events need to stay in the correct order where their id=index+1
+  var specificEvent = events[eventId-1];
+
     return (
 
         <Layout>
@@ -89,14 +88,96 @@ function SelectedEvent() {
 
     </Grid>
 
-          <h5>Selected Event - Details and Registration</h5>
-              <h1>
-                Defense in the Digital Age
+          <h5>Selected Event - Details</h5>
+            <Grid container justify="center">
+            <h1>
+                {specificEvent.name}
             </h1>
-
-            <RegisterButton />
-
             <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="md">
+            <p> Status: {specificEvent.status}
+                <p> {""}</p>
+
+                <b> {specificEvent.date}, {specificEvent.time} </b>
+
+            </p>
+      </Container>
+    </React.Fragment>
+    <React.Fragment>
+      <CssBaseline />
+      <Paper square sx={{ pb: '50px' }}>
+        <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
+          {specificEvent.name}
+        </Typography>
+        <List sx={{ mb: 2 }}>
+                <ListSubheader sx={{ bgcolor: 'background.paper' }}>
+                  {specificEvent.description}
+
+                  <p>{" "}</p>
+                </ListSubheader>
+        </List>
+      </Paper>
+
+    </React.Fragment>
+
+      <CssBaseline />
+      <Container maxWidth="md">
+             <p>
+
+
+            </p>
+
+
+
+
+      </Container>
+
+
+<Stack spacing={4} direction="row"
+alignItems="center"
+justifyContent="space-evenly"
+>
+
+
+    <Button variant="contained"
+    href="/check-in-now"
+    sx={{ bgcolor: green[500] }}
+    endIcon={< QrCodeScanner />}>
+    Check in
+  </Button>
+
+  <Button variant="contained"
+    sx={{ bgcolor: green[500] }}
+    href="/lookup-materials"
+    endIcon={< DownloadRounded />}>
+    Lookup Materials
+  </Button>
+
+  <Button variant="contained"
+    href="https://www.zoom.us/"
+    sx={{ bgcolor: green[500] }}
+    endIcon={< VideoLibraryRoundedIcon />}>
+    Zoom Link
+  </Button>
+
+</Stack>
+<Container maxWidth="md">
+             <p>
+            </p>
+</Container>
+<Container maxWidth="md">
+             <p>
+            </p>
+</Container>
+    
+            </Grid>
+            {/* })} */}
+              {/* <h1>
+                Defense in the Digital Age
+            </h1> */}
+
+            {/* <React.Fragment>
       <CssBaseline />
       <Container maxWidth="md">
             <p> Status: Open
@@ -106,9 +187,9 @@ function SelectedEvent() {
 
             </p>
       </Container>
-    </React.Fragment>
+    </React.Fragment> */}
 
-            <React.Fragment>
+            {/* <React.Fragment>
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
         <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
@@ -148,10 +229,10 @@ function SelectedEvent() {
 
 
       </Container>
-    </React.Fragment>
+    </React.Fragment> */}
 
 
-    <p> {""}</p>
+    {/* <p> {""}</p>
 
             <Stack spacing={4} direction="row"
             alignItems="center"
@@ -190,7 +271,7 @@ function SelectedEvent() {
 
 
             <p> {""}
-            </p>
+            </p> */}
 
         </Layout>
     );
