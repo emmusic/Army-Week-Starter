@@ -10,6 +10,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { QrCodeScanner } from "@mui/icons-material";
 
+import { Router } from "@reach/router"
+import MyEvents from "./myevents"
+import Help from "./faq"
+import SelectedEvent from "./selectedEvent/[id].js"
+import QRApp from "./qrApp"
+
 const links = [
   {
     text: "Army Week",

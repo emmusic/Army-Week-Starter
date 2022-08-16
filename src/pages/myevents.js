@@ -16,6 +16,9 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import { ListItemButton } from '@mui/material';
 
+//import the events JSON
+var events = require('./events.json');
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -25,27 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 const MyEvents = () => {
-    // This array is a placeholder for when we're able to access the Microsoft Graph API/have some backend that keeps tracks of events a user is registered to
-    const events = [
-        {
-            name: "Defense in the Digital Age",
-            description: "sdlghvwewpgwepfvnepwvn",
-            date: "09-12-2022",
-            time: "9:00-10:15",
-            status: "Open",
-            presenter: "LCol SoandSo",
-            route: "/selectedEvent"
-        },
-        {
-            name: "Event 2",
-            description: "sdlghvwewpgwepfvnepwvn",
-            date: "09-15-2022",
-            time: "11:00-12:30",
-            status: "Open",
-            presenter: "LCol BlahBlah",
-            route: "/"
-        },
-      ]
+  var specificEvent = events.filter(event => event.number === 1)
 
   return(
     <Layout>
@@ -62,7 +45,7 @@ const MyEvents = () => {
             {events.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={event.route}>
+            <ListItemButton href={`/selectedEvent/${event.number}`}>
             <Grid item xs={10}>
               <ListItemText>{event.name}</ListItemText>
               </Grid>

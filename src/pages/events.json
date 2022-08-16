@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Defense in the Digital Age",
+        "description": "sdlghvwewpgwepfvnepwvn",
+        "date": "09-12-2022",
+        "time": "9:00-10:15",
+        "status": "Open",
+        "presenter": "LCol SoandSo",
+        "route": "/selectedEvent",
+        "number": "1"
+    },
+    {
+        "name": "Event 2",
+        "description": "sdlghvwewpgwepfvnepwvn",
+        "date": "09-15-2022",
+        "time": "11:00-12:30",
+        "status": "Open",
+        "presenter": "LCol BlahBlah",
+        "route": "/",
+        "number": 2
+    }
+]
