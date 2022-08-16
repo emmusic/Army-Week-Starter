@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import QRScan from 'qrscan'
 import { Fragment } from 'react'
+import { useState } from "react";
+
 
 class QRApp extends Component {
 
@@ -17,7 +19,7 @@ class QRApp extends Component {
   render () {
     return (
       <Fragment>
-        <h2>Check In Now</h2>
+        <h2>Check in Now</h2>
         {this.state.watching
           ? (
             <QRScan onFind={this.onFind} />
@@ -30,8 +32,8 @@ class QRApp extends Component {
           )
         }
       </Fragment>
-    );
-   }
+    )
+  }
 }
 
-export default  QRApp
+export default QRApp
