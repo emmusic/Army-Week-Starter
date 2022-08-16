@@ -1,12 +1,12 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
+//Components
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RegisterButton from "../components/registerButton"
 import Bottombar from "../components/Bottombar/bottombar"
 
-//import { Text, View } from 'react-native';
+//MUI
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
@@ -14,38 +14,17 @@ import { deepPurple, green } from '@mui/material/colors';
 import FolderIcon from '@mui/icons-material/Folder';
 import { DownloadRounded } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
-
-
-import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Grid";
-
 import { styled } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import Fab from '@mui/material/Fab';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import MenuIcon from '@mui/icons-material/Menu';
 import PageviewIcon from '@mui/icons-material/Pageview';
-import AddIcon from '@mui/icons-material/Add';
-import SearchIcon from '@mui/icons-material/Search';
-import MoreIcon from '@mui/icons-material/MoreVert';
-import HomeIcon from '@mui/icons-material/Home';
 import { QrCodeScanner } from "@mui/icons-material";
-import { MdOutlineHelp} from "react-icons/md";
-import AddTaskIcon from '@mui/icons-material/AddTask';
-import Alert from '@mui/material/Alert';
-import Collapse from '@mui/material/Collapse';
-import CloseIcon from '@mui/icons-material/Close';
-import Snackbar from '@mui/material/Snackbar';
 
 
 const LookupMaterialsText = [

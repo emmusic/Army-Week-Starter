@@ -13,7 +13,7 @@ import { QrCodeScanner } from "@mui/icons-material";
 import { Router } from "@reach/router"
 import MyEvents from "./myevents"
 import Help from "./faq"
-import SelectedEvent from "./selectedEvent/[id].js"
+import SelectedEvent from "./eventDetails/[id].js"
 import QRApp from "./qrApp"
 
 const links = [
@@ -39,9 +39,8 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "Select Event",
-    url: "selectedEvent",
-    badge: true
+    text: "My Events",
+    url: "myevents"
   },
 { text: "Profile", url: "Profile" },
 { text: "Check in now", url: "qrApp"},
