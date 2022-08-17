@@ -34,6 +34,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+
         <footer
           style={{
             marginTop: `var(--space-5)`,
@@ -44,7 +45,8 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
-      </div>
+
+
     </>
   )
 }
