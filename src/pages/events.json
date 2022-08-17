@@ -1,0 +1,436 @@
+{
+    "events":[
+       {
+        "Day": "Prep",
+        "Date": "Mon Sept 12",
+        "Time": "TBD",
+        "Category": "N/A",
+        "Title": "Prep",
+        "Presenter": "N/A",
+        "Location": "N/A",
+        "Id": 0
+       },
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "08:00",
+        "Category": "Army Council",
+        "Title": "Dial in",
+        "Presenter": "EA/Coords",
+        "Location": "Room 106",
+        "Id": 1
+       },
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "08:30",
+        "Category": "Army Council",
+        "Title": "Opening Remarks",
+        "Presenter": "DAS",
+        "Location": "Room 106",
+        "Id": 2
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "08:50",
+        "Category": "Army Council",
+        "Title": "Comd Philosophy",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 3
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "10:20",
+        "Category": "Army Council",
+        "Title": "Break",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 4
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "10:35",
+        "Category": "Army Council",
+        "Title": "Business Planning&Risks",
+        "Presenter": "DAS",
+        "Location": "Room 106",
+        "Id": 5
+       },
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "11:05",
+        "Category": "Army Council",
+        "Title": "CAMS Annual Report",
+        "Presenter": "DAS",
+        "Location": "Room 106",
+        "Id": 6
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "12:30",
+        "Category": "Army Council",
+        "Title": "Lunch",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 7
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "13:30",
+        "Category": "Army Council",
+        "Title": "Reconstitution",
+        "Presenter": "COS Ops",
+        "Location": "Room 106",
+        "Id": 8
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "14:30",
+        "Category": "Army Council",
+        "Title": "Digital Governance",
+        "Presenter": "COS Strat",
+        "Location": "Room 106",
+        "Id": 9
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "15:30",
+        "Category": "Army Council",
+        "Title": "Break",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 10
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "15:45",
+        "Category": "Army Council",
+        "Title": "Force 2025",
+        "Presenter": "COS Strat",
+        "Location": "Room 106",
+        "Id": 11
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "16:15",
+        "Category": "Army Council",
+        "Title": "FTSE Results",
+        "Presenter": "ATA",
+        "Location": "Room 106",
+        "Id": 12
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "17:15",
+        "Category": "Army Council",
+        "Title": "Closing Points",
+        "Presenter": "DAS",
+        "Location": "Room 106", 
+        "Id": 13
+       },   
+       {
+        "Day": "1",
+        "Date": "Tue Sept 13",
+        "Time": "17:30 - 18:45",
+        "Category": "AC Reception",
+        "Title": "AC Reception",
+        "Presenter": "COS Ops",
+        "Location": "Room 304", 
+        "Id": 14
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "08:00",
+        "Category": "Army Council",
+        "Title": "Dail in",
+        "Presenter": "EA/Coords",
+        "Location": "Room 106",
+        "Id": 15
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "08:30",
+        "Category": "Army Council",
+        "Title": "Review Day 1",
+        "Presenter": "DAS",
+        "Location": "Room 106",
+        "Id": 16
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "08:40",
+        "Category": "Army Council",
+        "Title": "Def Policy Update",
+        "Presenter": "COS Strat",
+        "Location": "Room 106",
+        "Id": 17
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "09:40",
+        "Category": "Army Council",
+        "Title": "L2 Round Table",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 18
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "10:40",
+        "Category": "Army Council",
+        "Title": "Break",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 19
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "10:55",
+        "Category": "Army Council",
+        "Title": "GO/SM Discussion",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 20
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "11:25",
+        "Category": "Army Council",
+        "Title": "CCA Closing",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 21
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "12:00",
+        "Category": "Army Council",
+        "Title": "Lunch",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 22
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "13:00 - 15:00",
+        "Category": "Talent Management",
+        "Title": "Talent Management",
+        "Presenter": "DCCA/DLPM",
+        "Location": "Room 106",
+        "Id": 23
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "15:00 - 17:00",
+        "Category": "ARes AG",
+        "Title": "ARes AG",
+        "Presenter": "DG Ares",
+        "Location": "Room 106H",
+        "Id": 24
+       },
+       {
+        "Day": "2",
+        "Date": "Wed Sept 14",
+        "Time": "19:00 - 20:30",
+        "Category": "Afghan Book Launch",
+        "Title": "Afghan Book Launch",
+        "Presenter": "G4",
+        "Location": "Off-site",
+        "Id": 25
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "08:00",
+        "Category": "SALS",
+        "Title": "Dail in",
+        "Presenter": "EA/Coords",
+        "Location": "Room 106",
+        "Id": 26
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "08:30",
+        "Category": "SALS",
+        "Title": "Opening Remarks",
+        "Presenter": "DAS",
+        "Location": "Room 106",
+        "Id": 27
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "08:40",
+        "Category": "SALS",
+        "Title": "Keynote Address",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 28
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "09:50",
+        "Category": "SALS",
+        "Title": "Break",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 29
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "10:00",
+        "Category": "SALS",
+        "Title": "Reconstitution Under Fire",
+        "Presenter": "COS Ops",
+        "Location": "Room 106",
+        "Id": 30
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "12:00",
+        "Category": "SALS",
+        "Title": "Lunch",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 31
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "13:00",
+        "Category": "SALS",
+        "Title": "Digital Transformation",
+        "Presenter": "COS Strat",
+        "Location": "Room 106",
+        "Id": 32
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "15:00",
+        "Category": "SALS",
+        "Title": "Break",
+        "Presenter": "N/A",
+        "Location": "Room 106",
+        "Id": 33
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "15:20",
+        "Category": "SALS",
+        "Title": "Modern Challenges to Leadership",
+        "Presenter": "CA SM",
+        "Location": "Room 106",
+        "Id": 34
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "16:50",
+        "Category": "SALS",
+        "Title": "Closing Remarks",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 35
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "17:00 - 23:00",
+        "Category": "SALS Reception",
+        "Title": "SALS Receptiont",
+        "Presenter": "COS Ops",
+        "Location": "Room 106",
+        "Id": 36
+       },
+       {
+        "Day": "3",
+        "Date": "Thur Sept 15",
+        "Time": "19:00 - 21:00",
+        "Category": "CWO Dinner",
+        "Title": "CWO Dinner",
+        "Presenter": "COS Ops",
+        "Location": "Hotel Restaurant",
+        "Id": 37
+       },
+       {
+        "Day": "4",
+        "Date": "Fri Sept 16",
+        "Time": "09:00 - 09:50",
+        "Category": "Town Halls",
+        "Title": "GOs",
+        "Presenter": "CCA",
+        "Location": "Room 106",
+        "Id": 38
+       },
+       {
+        "Day": "4",
+        "Date": "Fri Sept 16",
+        "Time": "10:00 - 10:50",
+        "Category": "Town Halls",
+        "Title": "Cols",
+        "Presenter": "DCCA",
+        "Location": "Room 106",
+        "Id": 39
+       },
+       {
+        "Day": "4",
+        "Date": "Fri Sept 16",
+        "Time": "11:00 - 12:30",
+        "Category": "Town Halls",
+        "Title": "CO/RSM",
+        "Presenter": "CCA/CASM",
+        "Location": "Room 106",
+        "Id": 40
+       },
+       {
+        "Day": "4",
+        "Date": "Fri Sept 16",
+        "Time": "09:00 - 0950",
+        "Category": "Town Halls",
+        "Title": "HCol",
+        "Presenter": "DG ARes",
+        "Location": "Room 106",
+        "Id": 41
+       },
+       {
+        "Day": "Post",
+        "Date": "Sun Sept 18",
+        "Time": "TBD",
+        "Category": "In Person Army Run",
+        "Title": "In Person Army Run",
+        "Presenter": "DG ARes",
+        "Location": "Offsite",
+        "Id": 42
+       }
+    ]
+    }
+    
+    

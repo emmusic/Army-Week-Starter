@@ -6,9 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-import CssBaseline from '@mui/material/CssBaseline';
-import Container from '@mui/material/Container';
-import { QrCodeScanner } from "@mui/icons-material";
 
 const links = [
   {
@@ -33,9 +30,8 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "Select Event",
-    url: "selectedEvent",
-    badge: true
+    text: "My Events",
+    url: "myevents"
   },
 { text: "Profile", url: "Profile" },
 { text: "Check in now", url: "qrApp"},
