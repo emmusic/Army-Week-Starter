@@ -34,7 +34,7 @@ const samplePageLinks = [
     url: "allevents"
   },
 { text: "Check in now", url: "qrApp"},
-{ text: "Calendar", url: "Calendar" },
+{ text: "Calendar", url: "calendar" },
 { text: "FAQ", url: "faq" }
 ]
 
@@ -113,6 +113,6 @@ const IndexPage = () => (
   </Layout>
 )
 
-const Head = () => <Seo title="Home" />
+// const Head = () => <Seo title="Home" />
 
 export default IndexPage

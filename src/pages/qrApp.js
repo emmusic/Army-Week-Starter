@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import QRScan from 'qrscan'
 import { Fragment } from 'react'
-import { useState } from "react";
+// import { useState } from "react";
 
 
 class QRApp extends Component {

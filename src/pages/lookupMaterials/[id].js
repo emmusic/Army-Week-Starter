@@ -8,29 +8,18 @@ import Bottombar from "../../components/Bottombar/bottombar"
 //MUI
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { deepPurple, green } from '@mui/material/colors';
+import { green } from '@mui/material/colors';
 import { DownloadRounded } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import Fab from '@mui/material/Fab';
 import { QrCodeScanner } from "@mui/icons-material";
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from "@mui/material/Grid";
 
-
-  const StyledFab = styled(Fab)({
-    position: 'absolute',
-    zIndex: 1,
-    top: -30,
-    left: 0,
-    right: 0,
-    margin: '0 auto',
-  });
 
 //import the events JSON
 var events = require('../events.json').events;

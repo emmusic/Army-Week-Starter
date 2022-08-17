@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Tooltip from '@mui/material/Tooltip';
@@ -19,7 +19,7 @@ import { StaticRouter } from 'react-router-dom/server';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Stack } from '@mui/material';
 
-const pages = ['Calendar', 'Events', 'Messages','Digital Army', 'Help'];
+// const pages = ['Calendar', 'Events', 'Messages','Digital Army', 'Help'];
 const settings = ['Profile', 'Dashboard', 'Logout'];
 
 

@@ -3,13 +3,13 @@ import Layout from "../components/layout"
 
 //MUI
 import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import { ListItemButton } from '@mui/material';
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 //import the events JSON
 var allevents = require('./events.json').events;
