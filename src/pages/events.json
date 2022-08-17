@@ -8,7 +8,9 @@
         "Title": "Prep",
         "Presenter": "N/A",
         "Location": "N/A",
-        "Id": 0
+        "Id": 0,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "1",
@@ -18,7 +20,9 @@
         "Title": "Dial in",
         "Presenter": "EA/Coords",
         "Location": "Room 106",
-        "Id": 1
+        "Id": 1,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "1",
@@ -28,7 +32,9 @@
         "Title": "Opening Remarks",
         "Presenter": "DAS",
         "Location": "Room 106",
-        "Id": 2
+        "Id": 2,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -38,7 +44,9 @@
         "Title": "Comd Philosophy",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 3
+        "Id": 3,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -48,17 +56,22 @@
         "Title": "Break",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 4
+        "Id": 4,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
         "Date": "Tue Sept 13",
         "Time": "10:35",
         "Category": "Army Council",
-        "Title": "Business Planning&Risks",
+        "Title": "Business Planning & Risks",
         "Presenter": "DAS",
         "Location": "Room 106",
-        "Id": 5
+        "Id": 5,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "1",
@@ -68,7 +81,9 @@
         "Title": "CAMS Annual Report",
         "Presenter": "DAS",
         "Location": "Room 106",
-        "Id": 6
+        "Id": 6,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -78,7 +93,10 @@
         "Title": "Lunch",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 7
+        "Id": 7,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -88,7 +106,9 @@
         "Title": "Reconstitution",
         "Presenter": "COS Ops",
         "Location": "Room 106",
-        "Id": 8
+        "Id": 8,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -98,7 +118,9 @@
         "Title": "Digital Governance",
         "Presenter": "COS Strat",
         "Location": "Room 106",
-        "Id": 9
+        "Id": 9,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -108,7 +130,10 @@
         "Title": "Break",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 10
+        "Id": 10,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -118,7 +143,9 @@
         "Title": "Force 2025",
         "Presenter": "COS Strat",
         "Location": "Room 106",
-        "Id": 11
+        "Id": 11,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -128,7 +155,9 @@
         "Title": "FTSE Results",
         "Presenter": "ATA",
         "Location": "Room 106",
-        "Id": 12
+        "Id": 12,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -138,7 +167,9 @@
         "Title": "Closing Points",
         "Presenter": "DAS",
         "Location": "Room 106", 
-        "Id": 13
+        "Id": 13,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },   
        {
         "Day": "1",
@@ -148,17 +179,21 @@
         "Title": "AC Reception",
         "Presenter": "COS Ops",
         "Location": "Room 304", 
-        "Id": 14
+        "Id": 14,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
         "Date": "Wed Sept 14",
         "Time": "08:00",
         "Category": "Army Council",
-        "Title": "Dail in",
+        "Title": "Dial in",
         "Presenter": "EA/Coords",
         "Location": "Room 106",
-        "Id": 15
+        "Id": 15,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -168,7 +203,9 @@
         "Title": "Review Day 1",
         "Presenter": "DAS",
         "Location": "Room 106",
-        "Id": 16
+        "Id": 16,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -178,7 +215,9 @@
         "Title": "Def Policy Update",
         "Presenter": "COS Strat",
         "Location": "Room 106",
-        "Id": 17
+        "Id": 17,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -188,7 +227,9 @@
         "Title": "L2 Round Table",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 18
+        "Id": 18,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -198,7 +239,10 @@
         "Title": "Break",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 19
+        "Id": 19,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -208,7 +252,9 @@
         "Title": "GO/SM Discussion",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 20
+        "Id": 20,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -218,7 +264,9 @@
         "Title": "CCA Closing",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 21
+        "Id": 21,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -228,7 +276,10 @@
         "Title": "Lunch",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 22
+        "Id": 22,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -238,7 +289,9 @@
         "Title": "Talent Management",
         "Presenter": "DCCA/DLPM",
         "Location": "Room 106",
-        "Id": 23
+        "Id": 23,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -248,7 +301,9 @@
         "Title": "ARes AG",
         "Presenter": "DG Ares",
         "Location": "Room 106H",
-        "Id": 24
+        "Id": 24,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "2",
@@ -258,17 +313,21 @@
         "Title": "Afghan Book Launch",
         "Presenter": "G4",
         "Location": "Off-site",
-        "Id": 25
+        "Id": 25,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
         "Date": "Thur Sept 15",
         "Time": "08:00",
         "Category": "SALS",
-        "Title": "Dail in",
+        "Title": "Dial in",
         "Presenter": "EA/Coords",
         "Location": "Room 106",
-        "Id": 26
+        "Id": 26,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -278,7 +337,9 @@
         "Title": "Opening Remarks",
         "Presenter": "DAS",
         "Location": "Room 106",
-        "Id": 27
+        "Id": 27,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -288,7 +349,9 @@
         "Title": "Keynote Address",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 28
+        "Id": 28,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -298,7 +361,10 @@
         "Title": "Break",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 29
+        "Id": 29,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -308,7 +374,9 @@
         "Title": "Reconstitution Under Fire",
         "Presenter": "COS Ops",
         "Location": "Room 106",
-        "Id": 30
+        "Id": 30,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -318,7 +386,10 @@
         "Title": "Lunch",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 31
+        "Id": 31,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -328,7 +399,9 @@
         "Title": "Digital Transformation",
         "Presenter": "COS Strat",
         "Location": "Room 106",
-        "Id": 32
+        "Id": 32,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -338,7 +411,10 @@
         "Title": "Break",
         "Presenter": "N/A",
         "Location": "Room 106",
-        "Id": 33
+        "Id": 33,
+        "Break": true,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -348,7 +424,9 @@
         "Title": "Modern Challenges to Leadership",
         "Presenter": "CA SM",
         "Location": "Room 106",
-        "Id": 34
+        "Id": 34,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -358,7 +436,9 @@
         "Title": "Closing Remarks",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 35
+        "Id": 35,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -368,7 +448,9 @@
         "Title": "SALS Receptiont",
         "Presenter": "COS Ops",
         "Location": "Room 106",
-        "Id": 36
+        "Id": 36,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "3",
@@ -378,7 +460,9 @@
         "Title": "CWO Dinner",
         "Presenter": "COS Ops",
         "Location": "Hotel Restaurant",
-        "Id": 37
+        "Id": 37,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "4",
@@ -388,7 +472,9 @@
         "Title": "GOs",
         "Presenter": "CCA",
         "Location": "Room 106",
-        "Id": 38
+        "Id": 38,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "4",
@@ -398,7 +484,9 @@
         "Title": "Cols",
         "Presenter": "DCCA",
         "Location": "Room 106",
-        "Id": 39
+        "Id": 39,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "4",
@@ -408,7 +496,9 @@
         "Title": "CO/RSM",
         "Presenter": "CCA/CASM",
         "Location": "Room 106",
-        "Id": 40
+        "Id": 40,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "4",
@@ -418,7 +508,9 @@
         "Title": "HCol",
         "Presenter": "DG ARes",
         "Location": "Room 106",
-        "Id": 41
+        "Id": 41,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        },
        {
         "Day": "Post",
@@ -428,7 +520,9 @@
         "Title": "In Person Army Run",
         "Presenter": "DG ARes",
         "Location": "Offsite",
-        "Id": 42
+        "Id": 42,
+        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
+        "Zoom Link": ""
        }
     ]
     }

@@ -33,8 +33,6 @@ const FetchTest = () => {
     }
   };
 
-  console.log(data);
-
   return (
     <div>
       {err && <h2>{err}</h2>}

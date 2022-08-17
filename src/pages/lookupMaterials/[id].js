@@ -1,38 +1,27 @@
 import * as React from "react"
 
 //Components
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import RegisterButton from "../components/registerButton"
-import Bottombar from "../components/Bottombar/bottombar"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
+import Bottombar from "../../components/Bottombar/bottombar"
 
 //MUI
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
 import { deepPurple, green } from '@mui/material/colors';
-import FolderIcon from '@mui/icons-material/Folder';
 import { DownloadRounded } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-import Grid from "@mui/material/Grid";
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Fab from '@mui/material/Fab';
-import List from '@mui/material/List';
-import ListSubheader from '@mui/material/ListSubheader';
-import PageviewIcon from '@mui/icons-material/Pageview';
 import { QrCodeScanner } from "@mui/icons-material";
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import Grid from "@mui/material/Grid";
 
-
-const LookupMaterialsText = [
-    {
-      id: 1,
-      primary: 'Defense in the Digital Age and Whatnot',
-     }
-   ];
 
   const StyledFab = styled(Fab)({
     position: 'absolute',
@@ -43,76 +32,44 @@ const LookupMaterialsText = [
     margin: '0 auto',
   });
 
+//import the events JSON
+var events = require('../events.json').events;
 
-function LookupMaterials() {
+
+function LookupMaterials(props) {
+    const eventId = props.params.id
+    var specificEvent = events[eventId];
 
     return (
 
         <Layout>
 
-
-    <Grid container justify="flex-end">
-
-<Stack direction="row" spacing={2} alignItems="flex-end">
-      <Avatar sx={{ bgcolor: deepPurple[500] }}
-        > JB
-         </Avatar>
-          <Stack
-            direction="row"
-            spacing={3}
-            alignItems="flex-end"
-            justifyContent="space-evenly" >
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <FolderIcon />
-                </Avatar>
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <PageviewIcon />
-                </Avatar>
-
-                <Avatar sx={{ bgcolor: green[400] }}>
-                    <DownloadRounded />
-                </Avatar>
-
-
-            </Stack>
-             </Stack>
-
-    </Grid>
-
           <h5>Lookup Materials</h5>
-              {/* <h4>
-                Defense in the Digital Age
-               </h4> */}
                <p>
                {""}
                 </p>
-                <RegisterButton />
 
 
                <React.Fragment>
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
         <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-          Defense in the Digital Age
+        {specificEvent.Title}
         </Typography>
-        <List sx={{ mb: 2 }}>
-          {LookupMaterialsText.map(({ id }) => (
-            <React.Fragment key={id}>
-              {id === 1 && (
-                <ListSubheader sx={{ bgcolor: 'background.paper' }}>
-                  Modern war is not fought on the battleground, but online.
 
-                  <p>{" "}</p>
+        {/* This is where we list the lookup materials  */}
+        {specificEvent.Materials.map(material => {
+          return (
+            <ListItem>
+            {/* <ListItemButton href={``}> */}
+            <Grid item xs={12}>
+              <ListItemText>{material.filename}</ListItemText>
+              </Grid>
+            {/* </ListItemButton> */}
+            </ListItem>
+          );
+            })}
 
-                  Lorem ipsum and lots of other good information and whatnot.
-                </ListSubheader>
-
-              )}
-            </React.Fragment>
-
-          ))}
-        </List>
       </Paper>
 
 <Bottombar />
@@ -178,8 +135,6 @@ function LookupMaterials() {
     );
 
 }
-
-
 
 
 export const Head = () => <Seo title="Lookup Material" />
