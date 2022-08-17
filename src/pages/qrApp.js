@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import QRScan from 'qrscan'
 import { Fragment } from 'react'
-import { useState } from "react";
 
 
 class QRApp extends Component {
@@ -27,7 +26,8 @@ class QRApp extends Component {
           : (
             <Fragment>
               <button onClick={() => this.setState({ watching: true })}
-              >Scan</button>
+              >Scan
+              </button>
               <h4>value: {this.state.value}</h4>
 
                    </Fragment>
