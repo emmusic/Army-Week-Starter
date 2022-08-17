@@ -30,15 +30,12 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "My Events",
-    url: "myevents"
+    text: "All Events",
+    url: "allevents"
   },
-{ text: "Profile", url: "Profile" },
 { text: "Check in now", url: "qrApp"},
 { text: "Calendar", url: "Calendar" },
-{ text: "Lookup Materials", url: "lookup-materials" },
-{ text: "FAQ", url: "faq" },
-{ text: "Server Side Rendering", url: "using-ssr" }
+{ text: "FAQ", url: "faq" }
 ]
 
 

@@ -95,7 +95,7 @@ const ResponsiveAppBar = () => {
   return (
     
     
-    <AppBar position="static">
+    <AppBar position="static" color="success">
       <Container maxWidth="xl" color="#43A047">
         <Toolbar disableGutters>
           
@@ -150,16 +150,16 @@ const ResponsiveAppBar = () => {
                 <MenuItem>
                   <Router>
                       <Stack spacing={2}>
-                        <Button href="/calendar" target="_blank" variant="contained">
+                        <Button href="/calendar" color="success" target="_blank" variant="contained">
                         Calendar
                         </Button>
-                        <Button href="/myevents" target="_blank" variant="contained">
-                        My Events
+                        <Button href="/allevents" color="success" target="_blank" variant="contained">
+                        All Events
                         </Button>
-                        <Button href="/messages" target="_blank" variant="contained">
+                        <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button>
-                        <Button href="/faq" target="_blank" variant="contained">
+                        <Button href="/faq" color="success" target="_blank" variant="contained">
                         Help
                         </Button>
                         </Stack>
@@ -191,16 +191,16 @@ const ResponsiveAppBar = () => {
             <ButtonGroup variant="contained" aria-label="outlined primary button group">
                 <ThemeProvider theme={theme}>
                     <Router>
-                        <Button href="/calendar" target="_blank" variant="contained">
+                        <Button href="/calendar" color="success" target="_blank" variant="contained">
                         Calendar
                         </Button>
-                        <Button href="/myevents" target="_blank" variant="contained">
-                        My Events
+                        <Button href="/allevents" color="success" target="_blank" variant="contained">
+                        All Events
                         </Button>
-                        <Button href="/messages" target="_blank" variant="contained">
+                        <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button>
-                        <Button href="/faq" target="_blank" variant="contained">
+                        <Button href="/faq" color="success" target="_blank" variant="contained">
                         Help
                         </Button>
                     </Router>

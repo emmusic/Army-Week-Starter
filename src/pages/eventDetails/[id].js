@@ -21,6 +21,7 @@ import ListSubheader from '@mui/material/ListSubheader';
 import { QrCodeScanner } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 
+
 //import the events JSON
 var events = require('../events.json').events;
 
@@ -100,7 +101,7 @@ justifyContent="space-evenly"
 
   <Button variant="contained"
     sx={{ bgcolor: green[500] }}
-    href="/lookup-materials"
+    href={`/lookupMaterials/${specificEvent.Id}`}
     endIcon={< DownloadRounded />}>
     Lookup Materials
   </Button>
