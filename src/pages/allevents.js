@@ -66,7 +66,7 @@ const MyEvents = () => {
             <ListItem>
             <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
-              <ListItemText>{event.Title}</ListItemText>
+              <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
@@ -83,7 +83,7 @@ const MyEvents = () => {
             <ListItem>
             <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
-              <ListItemText>{event.Title}</ListItemText>
+              <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
@@ -100,7 +100,7 @@ const MyEvents = () => {
             <ListItem>
             <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={6}>
-              <ListItemText>{event.Title}</ListItemText>
+              <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={6} justifyContent="right">
@@ -117,7 +117,7 @@ const MyEvents = () => {
             <ListItem>
             <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
-              <ListItemText>{event.Title}</ListItemText>
+              <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
@@ -134,7 +134,7 @@ const MyEvents = () => {
             <ListItem>
             <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
-              <ListItemText>{event.Title}</ListItemText>
+              <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
@@ -151,7 +151,7 @@ const MyEvents = () => {
             <ListItem>
             <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
-              <ListItemText>{event.Title}</ListItemText>
+              <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
