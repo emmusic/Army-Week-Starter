@@ -4,6 +4,7 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
+
 //MUI
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -18,11 +19,22 @@ import List from '@mui/material/List';
 import ListSubheader from '@mui/material/ListSubheader';
 import { QrCodeScanner } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
-
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 
 //import the events JSON
 var events = require('../events.json').events;
 
+  const bull = (
+    <Box
+      component="span"
+      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+    >
+      •
+    </Box>
+  );
 
 function SelectedEvent(props) {
   const eventId = props.params.id
@@ -32,51 +44,31 @@ function SelectedEvent(props) {
     return (
 
         <Layout>
-
-    <Grid container justify="flex-end">
-
-    </Grid>
-
-          <h5>Selected Event - Details</h5>
-            <Grid container justify="center">
-            <h1>
-                {specificEvent.title}
-            </h1>
-            <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="md">
-            <p> Presenter: {specificEvent.Presenter}
-                <p> {""}</p>
-
-                <b> {specificEvent.Date}, {specificEvent.Time} </b>
-            </p>
-      </Container>
-    </React.Fragment>
-    <React.Fragment>
-      <CssBaseline />
-      <Paper square sx={{ pb: '50px' }}>
-        <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-          {specificEvent.title}
+          <Card sx={{ minWidth: 275 }}>
+      <CardContent>
+        <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
+        Selected Event - Details
         </Typography>
-        <List sx={{ mb: 2 }}>
-                <ListSubheader sx={{ bgcolor: 'background.paper' }}>
-                <p>Category: {specificEvent.Category}</p>
-                <p>Location: {specificEvent.Location}</p>
+        <Typography variant="h5" component="div">
+          {specificEvent.Title}
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          Presenter: {specificEvent.Presenter}
+        </Typography>
+        <Typography variant="body2">
+          Category: {specificEvent.Category}
+          <br />
+          Date: {specificEvent.Date}
+          <br />
+          Time: {specificEvent.Time}
+          <br />
+          Location: {specificEvent.Location}
+          <br />
 
-                  <p>{" "}</p>
-                </ListSubheader>
-        </List>
-      </Paper>
-
-    </React.Fragment>
-
-      <CssBaseline />
-      <Container maxWidth="md">
-             <p>
-            </p>
-      </Container>
-
-<Stack spacing={4} direction="row"
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Stack spacing={2} direction="row"
 alignItems="center"
 justifyContent="space-evenly"
 >
@@ -90,7 +82,7 @@ justifyContent="space-evenly"
 
   <Button variant="contained"
     sx={{ bgcolor: green[500] }}
-    href={`/lookupMaterials/${specificEvent.id}`}
+    href="/lookup-materials"
     endIcon={< DownloadRounded />}>
     Lookup Materials
   </Button>
@@ -103,16 +95,10 @@ justifyContent="space-evenly"
   </Button>
 
 </Stack>
-<Container maxWidth="md">
-             <p>
-            </p>
-</Container>
-<Container maxWidth="md">
-             <p>
-            </p>
-</Container>
-    
-            </Grid>
+      </CardActions>
+    </Card>
+          
+           
         </Layout>
     );
 }
