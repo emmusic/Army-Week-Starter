@@ -17,6 +17,7 @@ var allevents = require('./events.json').events;
 var events = allevents.filter(function (event) {
   return event.Break !== true;
 });
+//Filtering events for each date
 var mon = events.filter(function (event) {
   return event.Date === "Mon Sept 12";
 });
@@ -63,7 +64,7 @@ const MyEvents = () => {
             {mon.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.Id}`}>
+            <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.Title}</ListItemText>
               </Grid>
@@ -80,7 +81,7 @@ const MyEvents = () => {
             {tue.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.Id}`}>
+            <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.Title}</ListItemText>
               </Grid>
@@ -97,7 +98,7 @@ const MyEvents = () => {
             {wed.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.Id}`}>
+            <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={6}>
               <ListItemText>{event.Title}</ListItemText>
               </Grid>
@@ -114,7 +115,7 @@ const MyEvents = () => {
             {thu.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.Id}`}>
+            <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.Title}</ListItemText>
               </Grid>
@@ -131,7 +132,7 @@ const MyEvents = () => {
             {fri.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.Id}`}>
+            <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.Title}</ListItemText>
               </Grid>
@@ -148,7 +149,7 @@ const MyEvents = () => {
             {sun.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.Id}`}>
+            <ListItemButton href={`/eventDetails/${event.id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.Title}</ListItemText>
               </Grid>

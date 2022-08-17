@@ -51,7 +51,7 @@ function SelectedEvent(props) {
           <h5>Selected Event - Details</h5>
             <Grid container justify="center">
             <h1>
-                {specificEvent.Title}
+                {specificEvent.title}
             </h1>
             <React.Fragment>
       <CssBaseline />
@@ -67,7 +67,7 @@ function SelectedEvent(props) {
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
         <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-          {specificEvent.Title}
+          {specificEvent.title}
         </Typography>
         <List sx={{ mb: 2 }}>
                 <ListSubheader sx={{ bgcolor: 'background.paper' }}>
@@ -101,7 +101,7 @@ justifyContent="space-evenly"
 
   <Button variant="contained"
     sx={{ bgcolor: green[500] }}
-    href={`/lookupMaterials/${specificEvent.Id}`}
+    href={`/lookupMaterials/${specificEvent.id}`}
     endIcon={< DownloadRounded />}>
     Lookup Materials
   </Button>
