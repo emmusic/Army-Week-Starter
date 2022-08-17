@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Bottombar />
+        {/* <Bottombar /> */}
         </div>
     </>
   )
