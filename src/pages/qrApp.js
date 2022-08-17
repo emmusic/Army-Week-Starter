@@ -29,7 +29,8 @@ class QRApp extends Component {
               <button onClick={() => this.setState({ watching: true })}
               >Scan</button>
               <h4>value: {this.state.value}</h4>
-            </Fragment>
+
+                   </Fragment>
           )
         }
       </Fragment>

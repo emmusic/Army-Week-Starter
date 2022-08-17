@@ -49,8 +49,6 @@ import AddTaskIcon from '@mui/icons-material/AddTask';
 import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 
 
-
-
   const StyledFab = styled(Fab)({
     position: 'absolute',
     zIndex: 1,
@@ -105,6 +103,8 @@ function CheckInNow() {
 
       <div id="qr-result" hidden="">
         <b>Data:</b> <span id="outputData"></span>
+
+
       </div>
     </div>
     <script src="./src/qrCodeScanner.js"></script>
