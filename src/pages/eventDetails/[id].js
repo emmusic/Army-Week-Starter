@@ -50,7 +50,7 @@ function SelectedEvent(props) {
         Selected Event - Details
         </Typography>
         <Typography variant="h5" component="div">
-          {specificEvent.Title}
+          {specificEvent.title}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           Presenter: {specificEvent.Presenter}
@@ -82,7 +82,7 @@ justifyContent="space-evenly"
 
   <Button variant="contained"
     sx={{ bgcolor: green[500] }}
-    href="/lookup-materials"
+    href={`/lookupMaterials/${specificEvent.id}`}
     endIcon={< DownloadRounded />}>
     Lookup Materials
   </Button>

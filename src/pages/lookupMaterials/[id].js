@@ -43,7 +43,7 @@ function LookupMaterials(props) {
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
         <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-        {specificEvent.Title}
+        {specificEvent.title}
         </Typography>
 
         {/* This is where we list the lookup materials  */}
