@@ -24,9 +24,13 @@ import HomeIcon from '@mui/icons-material/Home';
 import { MdOutlineHelp} from "react-icons/md";
 import { QrCodeScanner } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
+import AddTaskIcon from '@mui/icons-material/AddTask';
+import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
+
 
 
 const StyledFab = styled(Fab)({
+
     position: 'absolute',
     zIndex: 1,
     top: -30,
@@ -34,8 +38,6 @@ const StyledFab = styled(Fab)({
     right: 0,
     margin: '0 auto',
   });
-
-
 
 
 
@@ -80,6 +82,8 @@ function CheckInNow() {
 
       <div id="qr-result" hidden="">
         <b>Data:</b> <span id="outputData"></span>
+
+
       </div>
     </div>
     <script src="./src/qrCodeScanner.js"></script>
