@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 
-const fetchTest = () => {
+const FetchTest = () => {
   const [data, setData] = useState({data: []});
   const [isLoading, setIsLoading] = useState(false);
   const [err, setErr] = useState('');
@@ -39,7 +39,8 @@ const fetchTest = () => {
     <div>
       {err && <h2>{err}</h2>}
 
-      <button onClick={handleClick}>Fetch data</button>
+      <button onClick={handleClick}>
+        Fetch people signed up for Event 1 </button>
 
       {isLoading && <h2>Loading...</h2>}
 
@@ -57,4 +58,4 @@ const fetchTest = () => {
   );
 };
 
-export default fetchTest;
+export default FetchTest;
