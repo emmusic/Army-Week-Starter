@@ -11,6 +11,9 @@ import ListItemText from '@mui/material/ListItemText';
 import { ListItemButton } from '@mui/material';
 import Container from '@mui/material/Container';
 
+import CheckInPopper from "../components/checkInPopper"
+import CheckInButtons from "../components/checkInBtn"
+
 //import the events JSON
 var allevents = require('./events.json').events;
 //filtering out Lunch and Break from the event list
@@ -80,6 +83,8 @@ const MyEvents = () => {
             {tue.map(event => {
           return (
             <ListItem>
+                 <CheckInButtons>
+                  </CheckInButtons>
             <ListItemButton href={`/eventDetails/${event.Id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.Title}</ListItemText>
@@ -87,8 +92,10 @@ const MyEvents = () => {
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
               <ListItemText secondary={event.Time} />
+
               </Grid>
             </ListItemButton>
+
             </ListItem>
           );
             })}
