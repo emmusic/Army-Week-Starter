@@ -112,9 +112,10 @@ function Help() {
                 </Grid>
                 <Box m="auto">
                 <h5>Still have questions?</h5>
-                    <Button variant="contained" color="success" href="/contact">
+                Replace with message capability
+                    {/* <Button variant="contained" color="success" href="/contact">
                     Contact Us
-                    </Button>
+                    </Button> */}
                 </Box>
             </Grid>
         </div>
