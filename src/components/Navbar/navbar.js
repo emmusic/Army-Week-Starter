@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Tooltip from '@mui/material/Tooltip';
@@ -19,7 +18,7 @@ import { StaticRouter } from 'react-router-dom/server';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Stack } from '@mui/material';
 
-// const pages = ['Calendar', 'Events', 'Messages','Digital Army', 'Help'];
+
 const settings = ['Profile', 'Dashboard', 'Logout'];
 
 
@@ -97,7 +96,6 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" color="success">
       <Container maxWidth="xl" color="#43A047">
         <Toolbar disableGutters>
-
           <Typography
             variant="h6"
             noWrap
@@ -113,10 +111,11 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            ARMY WEEK
+            ARMY WEEK 2022
           </Typography>
 
           <Box sx={{ flexGrow: 5, display: { xs: 'flex', md: 'none' } }}>
+          <Tooltip title="Open settings">
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -127,6 +126,7 @@ const ResponsiveAppBar = () => {
             >
               <MenuIcon />
             </IconButton>
+            </Tooltip>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -149,16 +149,16 @@ const ResponsiveAppBar = () => {
                 <MenuItem>
                   <Router>
                       <Stack spacing={2}>
-                        <Button href="/calendar" color="success" target="_blank" variant="contained">
+                        <Button href="/calendar" color="success" target="_self" variant="contained">
                         Calendar
                         </Button>
-                        <Button href="/" color="success" target="_blank" variant="contained">
+                        <Button href="/" color="success" target="_self" variant="contained">
                         Venue Info
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button> */}
-                        <Button href="/faq" color="success" target="_blank" variant="contained">
+                        <Button href="/faq" color="success" target="_self" variant="contained">
                         Help
                         </Button>
                         </Stack>
@@ -184,22 +184,22 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            ARMY WEEK
+            ARMY WEEK 2022
           </Typography>
-          <Box sx={{  display: { xs: 'none', md: 'flex' } }}>
-            <ButtonGroup variant="contained" aria-label="outlined primary button group">
+          <Box sx={{ flexGrow: 5, display: { xs: 'none', md: 'flex',} }}>
+            <ButtonGroup spacing={2} direction="row" variant="contained" aria-label="outlined primary button group">
                 <ThemeProvider theme={theme}>
                     <Router>
-                        <Button href="/calendar" color="success" target="_blank" variant="contained">
+                    <Button href="/calendar" color="success" target="_top" variant="contained">
                         Calendar
                         </Button>
-                        <Button href="/" color="success" target="_blank" variant="contained">
+                        <Button href="/" color="success" target="_top" variant="contained">
                         Venue Info
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button> */}
-                        <Button href="/faq" color="success" target="_blank" variant="contained">
+                        <Button href="/faq" color="success" target="_top" variant="contained">
                         Help
                         </Button>
                     </Router>
@@ -209,15 +209,16 @@ const ResponsiveAppBar = () => {
 
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box>
             <Tooltip title="Open settings">
             <IconButton
                 size="large"
                 aria-label="account of current user"
-                aria-controls="menu-appbar"
+                aria-controls="menu-appbar2"
                 aria-haspopup="true"
                 onClick={handleOpenUserMenu}
                 color="inherit"
+                textAlign="right"
               >
                 <AccountCircle />
               </IconButton>
@@ -225,7 +226,7 @@ const ResponsiveAppBar = () => {
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
-              id="menu-appbar"
+              id="menu-appbar2"
               anchorEl={anchorElUser}
               anchorOrigin={{
                 vertical: 'top',
