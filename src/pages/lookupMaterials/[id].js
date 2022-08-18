@@ -3,7 +3,6 @@ import * as React from "react"
 //Components
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import Bottombar from "../../components/Bottombar/bottombar"
 
 //MUI
 import Stack from '@mui/material/Stack';
@@ -15,7 +14,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import { QrCodeScanner } from "@mui/icons-material";
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from "@mui/material/Grid";
@@ -61,7 +59,6 @@ function LookupMaterials(props) {
 
       </Paper>
 
-<Bottombar />
     </React.Fragment>
 
 

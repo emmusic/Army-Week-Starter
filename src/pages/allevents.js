@@ -11,8 +11,8 @@ import { ListItemButton } from '@mui/material';
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Grid";
 
-import CheckInPopper from "../components/checkInPopper"
-import CheckInButtons from "../components/checkInBtn"
+// import CheckInPopper from "../components/CheckInButton/checkInPopper"
+import CheckInButtons from "../components/CheckInButton/checkInBtn"
 
 //import the events JSON
 var allevents = require('./events.json').events;
