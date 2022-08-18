@@ -29,7 +29,6 @@
     "prop-types": "^15.8.1",
     "qrscan": "^1.0.6",
     "react": "^18.1.0",
-    "react-calendar": "^3.7.0",
     "react-dom": "^18.1.0",
     "react-faq-component": "^1.3.4",
     "react-icons": "^4.4.0",

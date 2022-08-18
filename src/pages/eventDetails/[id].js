@@ -73,12 +73,12 @@ alignItems="center"
 justifyContent="space-evenly"
 >
 
-    <Button variant="contained"
+    {/* <Button variant="contained"
     href="/check-in-now"
     sx={{ bgcolor: green[500] }}
     endIcon={< QrCodeScanner />}>
     Check in
-  </Button>
+  </Button> */}
 
   <Button variant="contained"
     sx={{ bgcolor: green[500] }}
