@@ -1,23 +1,33 @@
 import * as React from 'react';
 import {useState} from 'react';
+import PopperUnstyled from '@mui/base/PopperUnstyled';
+import { styled } from '@mui/system';
+
 
 export default function CheckInButtons() {
   const handleClick = event => {
     event.currentTarget.disabled = true;
+    // setAnchorEl(anchorEl ? null : event.currentTarget);
     console.log('button clicked');
   };
+
+  // const [anchorEl, setAnchorEl] = React.useState(null);
 
   return (
     <div>
       {/* ✅ disable button after it has been clicked once */}
-      <button onClick={handleClick
-      }>Check in
+      <button onClick={handleClick}
+      >Check in
       </button>
+      {/* <PopperUnstyled id={id} open={open} anchorEl={anchorEl}>
+        <StyledPopperDiv>
+            You have Checked In!
+            </StyledPopperDiv>
+      </PopperUnstyled> */}
     </div>
   );
-
-  
 }
+
 
 // export default CheckInButtons
 

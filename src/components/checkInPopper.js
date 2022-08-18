@@ -33,7 +33,7 @@ const StyledPopperDiv = styled('div')(
       </button>
       <PopperUnstyled id={id} open={open} anchorEl={anchorEl}>
         <StyledPopperDiv>
-            You have Checked In! You go glen cocoa.
+            You have Checked In!
             </StyledPopperDiv>
       </PopperUnstyled>
     </div>

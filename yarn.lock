@@ -1198,6 +1198,7 @@
   dependencies:
     tslib "^2.1.0"
 
+<<<<<<< Updated upstream
 "@fullcalendar/daygrid@^5.11.2", "@fullcalendar/daygrid@~5.11.2":
   version "5.11.2"
   resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-5.11.2.tgz#9e110d22e20a70c8dd8f32b11f2383d52da3d8a0"
@@ -1222,6 +1223,8 @@
     "@fullcalendar/common" "~5.11.2"
     tslib "^2.1.0"
 
+=======
+>>>>>>> Stashed changes
 "@fullcalendar/react@^5.11.2":
   version "5.11.2"
   resolved "https://registry.yarnpkg.com/@fullcalendar/react/-/react-5.11.2.tgz#019e6a0573d869c2a52f63426e13593857ee2d30"
@@ -1230,6 +1233,7 @@
     "@fullcalendar/common" "~5.11.2"
     tslib "^2.1.0"
 
+<<<<<<< Updated upstream
 "@fullcalendar/timegrid@^5.11.2":
   version "5.11.2"
   resolved "https://registry.yarnpkg.com/@fullcalendar/timegrid/-/timegrid-5.11.2.tgz#1917cb1fcdb664e19b750d046dea86bc6f196cb8"
@@ -1239,6 +1243,8 @@
     "@fullcalendar/daygrid" "~5.11.2"
     tslib "^2.1.0"
 
+=======
+>>>>>>> Stashed changes
 "@gatsbyjs/parcel-namer-relative-to-cwd@1.5.0":
   version "1.5.0"
   resolved "https://registry.npmjs.org/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.5.0.tgz"
@@ -5779,6 +5785,11 @@ fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
+
+fullcalendar@^5.11.2:
+  version "5.11.2"
+  resolved "https://registry.yarnpkg.com/fullcalendar/-/fullcalendar-5.11.2.tgz#efdafbb40652f7dec8aa4443a75f5c0f397288c3"
+  integrity sha512-gAJTY+4rnWZV2BVrul6Rvl52sidxOyAhN0P8Fp9iYP0mJhTC+2U0oOoN8VKEnyi88QVe0WkFVt6p/pd5XLqBPw==
 
 function-bind@^1.1.1:
   version "1.1.1"
