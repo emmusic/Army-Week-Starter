@@ -22,7 +22,7 @@ export default function Bottombar() {
       < MdOutlineHelp />
  </IconButton>
 
- <IconButton color="inherit" href="/check-in-now" >
+ <IconButton color="inherit" href="/qrApp" >
       < QrCodeScanner />
  </IconButton>
 

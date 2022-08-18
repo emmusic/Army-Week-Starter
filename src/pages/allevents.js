@@ -9,7 +9,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import { ListItemButton } from '@mui/material';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+
+import CheckInPopper from "../components/checkInPopper"
+import CheckInButtons from "../components/checkInBtn"
 
 //import the events JSON
 var allevents = require('./events.json').events;
@@ -81,15 +83,19 @@ const MyEvents = () => {
             {tue.map(event => {
           return (
             <ListItem>
-            <ListItemButton href={`/eventDetails/${event.id}`}>
+                 <CheckInButtons>
+                  </CheckInButtons>
+            <ListItemButton href={`/eventDetails/${event.Id}`}>
             <Grid item xs={12}>
               <ListItemText>{event.title}</ListItemText>
               </Grid>
               <Grid item xs={6}></Grid>
               <Grid item xs={12} justifyContent="right">
               <ListItemText secondary={event.Time} />
+
               </Grid>
             </ListItemButton>
+
             </ListItem>
           );
             })}

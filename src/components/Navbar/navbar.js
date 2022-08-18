@@ -23,7 +23,6 @@ import { Stack } from '@mui/material';
 const settings = ['Profile', 'Dashboard', 'Logout'];
 
 
-
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -50,7 +49,7 @@ const ResponsiveAppBar = () => {
     // Map href (MUI) -> to (react-router)
     return <RouterLink data-testid="custom-link" ref={ref} to={href} {...other} />;
   });
-  
+
   LinkBehavior.propTypes = {
     href: PropTypes.oneOfType([
       PropTypes.shape({
@@ -61,20 +60,20 @@ const ResponsiveAppBar = () => {
       PropTypes.string,
     ]).isRequired,
   };
-  
+
   function Router(props) {
     const { children } = props;
     if (typeof window === 'undefined') {
       return <StaticRouter location="/">{children}</StaticRouter>;
     }
-  
+
     return <MemoryRouter>{children}</MemoryRouter>;
   }
-  
+
   Router.propTypes = {
     children: PropTypes.node,
   };
-  
+
   const theme = createTheme({
     components: {
       MuiLink: {
@@ -93,12 +92,12 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    
-    
+
+
     <AppBar position="static" color="success">
       <Container maxWidth="xl" color="#43A047">
         <Toolbar disableGutters>
-          
+
           <Typography
             variant="h6"
             noWrap
@@ -117,7 +116,7 @@ const ResponsiveAppBar = () => {
             ARMY WEEK
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 5, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -146,7 +145,7 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              
+
                 <MenuItem>
                   <Router>
                       <Stack spacing={2}>
@@ -165,10 +164,10 @@ const ResponsiveAppBar = () => {
                         </Stack>
                     </Router>
                 </MenuItem>
-              
+
             </Menu>
           </Box>
-          
+
           <Typography
             variant="h5"
             noWrap
@@ -207,7 +206,7 @@ const ResponsiveAppBar = () => {
 
       </ThemeProvider>
       </ButtonGroup>
-     
+
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -222,7 +221,7 @@ const ResponsiveAppBar = () => {
               >
                 <AccountCircle />
               </IconButton>
-              
+
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
@@ -242,7 +241,8 @@ const ResponsiveAppBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center">{setting}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -250,7 +250,7 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
-    
+
   );
 };
 export default ResponsiveAppBar;
