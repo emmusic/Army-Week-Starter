@@ -152,7 +152,7 @@ const ResponsiveAppBar = () => {
                         <Button href="/calendar" color="success" target="_self" variant="contained">
                         Calendar
                         </Button>
-                        <Button href="/" color="success" target="_self" variant="contained">
+                        <Button href="/venueinfo" color="success" target="_blank" variant="contained">
                         Venue Info
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
@@ -193,7 +193,7 @@ const ResponsiveAppBar = () => {
                     <Button href="/calendar" color="success" target="_top" variant="contained">
                         Calendar
                         </Button>
-                        <Button href="/" color="success" target="_top" variant="contained">
+                        <Button href="/venueinfo" color="success" target="_blank" variant="contained">
                         Venue Info
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">

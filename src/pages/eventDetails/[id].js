@@ -10,14 +10,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { green } from '@mui/material/colors';
 import { DownloadRounded } from "@mui/icons-material";
-import Paper from '@mui/material/Paper';
-import CssBaseline from '@mui/material/CssBaseline';
-import Container from '@mui/material/Container';
-import Grid from "@mui/material/Grid";
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListSubheader from '@mui/material/ListSubheader';
-import { QrCodeScanner } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -26,15 +19,6 @@ import CardContent from '@mui/material/CardContent';
 
 //import the events JSON
 var events = require('../events.json').events;
-
-  const bull = (
-    <Box
-      component="span"
-      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-      •
-    </Box>
-  );
 
 function SelectedEvent(props) {
   const eventId = props.params.id
