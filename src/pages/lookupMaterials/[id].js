@@ -20,7 +20,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import { QrCodeScanner } from "@mui/icons-material";
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from "@mui/material/Grid";
@@ -86,7 +85,6 @@ function LookupMaterials(props) {
 
       </Paper>
 
-<Bottombar />
     </React.Fragment>
 
 
@@ -113,12 +111,12 @@ function LookupMaterials(props) {
 
 
 
-            <Button variant="contained"
+            {/* <Button variant="contained"
                 href="/check-in-now"
                 sx={{ bgcolor: green[500] }}
                 endIcon={< QrCodeScanner />}>
                 Check in
-              </Button>
+              </Button> */}
 
               <Button variant="contained"
                 sx={{ bgcolor: green[500] }}
