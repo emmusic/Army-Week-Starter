@@ -28,6 +28,11 @@ import AddTaskIcon from '@mui/icons-material/AddTask';
 import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 
 
+import textField from '../components/textField'
+import HelperTextAligned from "../components/textField";
+import FreeSoloCreateOptionDialog from "../components/addUserName"
+import ImagePreview from "../components/imagePreview";
+
 
 const StyledFab = styled(Fab)({
 
@@ -47,32 +52,30 @@ function CheckInNow() {
         <Layout>
 
   <h5>
-          Check In Now </h5>
+          Welcome to Army Week!</h5>
 
                <p>
-               {"Use your phone to scan the QR code:"}
+               {"What's your name?"}
                 </p>
 
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="viewport"
+    content="width=device-width; initial-scale=1.0;
+    maximum-scale=1.0; user-scalable=0;" />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div id="container">
 
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
 
-            <QrCodeScanner
+                <FreeSoloCreateOptionDialog>
 
-            size="large"
-            aria-label="add"
-            sx={{display: "flex",
-            justifyContent: "center",
-            fontSize: "200px"}}>
+                </FreeSoloCreateOptionDialog>
 
-              </QrCodeScanner>
+
 
 
             </Container>
