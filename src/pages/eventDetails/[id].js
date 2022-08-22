@@ -1,7 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { StaticImage } from "gatsby-plugin-image"
 
 //Components
 import Layout from "../../components/layout"
@@ -39,11 +38,10 @@ function SelectedEvent(props) {
   }`);
 
   const eventId = props.params.id
-  // I couldn't get the lookup to work, for this line below to work the events need to stay in the correct order where their id=index
+  // For this line below to work the events need to stay in the correct order where their id=index
   var specificEvent = events[eventId];
 
-  // const image = getImage("../../images/106.png")
-  // const image = data.allFile.edges.node.filter(node => node.relativePath === specificEvent.Floorplan)
+  // Grabs the floorplan image that matches this event's room #
   const roomFloorplan = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.RoomFloorplan)
   const venueFloorplan = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.VenueFloorplan)
 
