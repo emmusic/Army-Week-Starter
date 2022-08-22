@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 import { UploadFileRounded } from '@mui/icons-material';
-import { green } from '@material-ui/core/colors';
+import { green } from '@mui/material/colors';
 
 const ImagePreview = () => {
   const [selectedImage, setSelectedImage] = useState(null);

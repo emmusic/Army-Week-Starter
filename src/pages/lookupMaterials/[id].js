@@ -27,9 +27,6 @@ import { ListItemButton } from "@mui/material"
 import Input from "@mui/material"
 import TextField from "@mui/material"
 
-
-
-
 //import the events JSON
 var events = require('../events.json').events;
 
