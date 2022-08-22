@@ -1,37 +1,55 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 //Components
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import ImagePreview from "../../components/imagePreview";
 
 
 //MUI
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { green } from '@mui/material/colors';
-import { DownloadRounded } from "@mui/icons-material";
 import Typography from '@mui/material/Typography';
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import Grid from '@mui/material/Grid';
 
-import ImagePreview from "../../components/imagePreview";
 
 //import the events JSON
-var events = require('../events.json').events;
+var events = require('../../data/events.json').events;
 
 function SelectedEvent(props) {
+  const data = useStaticQuery(graphql`{
+    allFile {
+      edges {
+        node {
+          childImageSharp {
+            gatsbyImageData(width: 500)
+          }
+          relativePath
+        }
+      }
+    }
+  }`);
+
   const eventId = props.params.id
-  // I couldn't get the lookup to work, for this line below to work the events need to stay in the correct order where their id=index
+  // For this line below to work the events need to stay in the correct order where their id=index
   var specificEvent = events[eventId];
+
+  // Grabs the floorplan image that matches this event's room #
+  const roomFloorplan = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.RoomFloorplan)
+  const venueFloorplan = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.VenueFloorplan)
 
     return (
 
         <Layout>
-          <Card sx={{ minWidth: 275 }}>
-      <CardContent>
+          <Card sx={{ minWidth: 300 }}>
+      <CardContent>        
         <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
         Selected Event - Details
         </Typography>
@@ -44,16 +62,15 @@ function SelectedEvent(props) {
         <Typography variant="body2">
           Category: {specificEvent.Category}
           <br />
-          Date: {specificEvent.Date}
+          date: {specificEvent.date}
           <br />
           Time: {specificEvent.Time}
           <br />
-          Location: {specificEvent.Location}
+          Location: {specificEvent.location}
           <br />
-
-        </Typography>
+        </Typography>   
       </CardContent>
-      <CardActions>
+      <CardActions>      
       <Stack spacing={2} direction="row"
 alignItems="center"
 justifyContent="space-evenly"
@@ -81,8 +98,36 @@ justifyContent="space-evenly"
   </Button>
 
 </Stack>
+
       </CardActions>
-    </Card>
+      </Card>
+      <Card sx={{ minWidth: 275 }}>
+      <CardContent>
+              {/* Room Floorplan Image Please make it pretty :D */}
+              {roomFloorplan.map(x => {
+          return (
+            <Grid>
+            <Typography variant="h6" component="div">
+              {specificEvent.location} Floorplan
+            </Typography>
+            <GatsbyImage image={getImage(x.node)} alt="Room Floorplan"/>
+            </Grid>
+          );
+            })}
+
+            {/* Venue Floorplan Image Please make it pretty :D */}
+            {venueFloorplan.map(x => {
+              return (
+                <Grid>
+                <Typography variant="h6" component="div">
+                {specificEvent.location} Location
+                </Typography>
+                <GatsbyImage image={getImage(x.node)} alt="Venue Floorplan"/>
+                </Grid>
+              );
+            })}
+            </CardContent>
+    </Card>  
 
         </Layout>
     );
