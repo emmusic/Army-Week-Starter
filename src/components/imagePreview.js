@@ -22,22 +22,30 @@ const ImagePreview = () => {
         type="file"
         id="select-image"
         style={{ display: 'none' }}
+        sx={{ bgcolor: green[500] }}
         onChange={e => setSelectedImage(e.target.files[0])}
       />
       <label htmlFor="select-image">
         <Button variant="contained"
+        sx={{ bgcolor: green[500] }}
         color="primary"
         component="span"
-        sx={{ bgcolor: green[500] }}
-        endIcon={< UploadFileRounded />}>
+
+        endIcon={< UploadFileRounded />
+        }>
+{/* sx={{ bgcolor: green[500] }}> */}
+
           Upload
         </Button>
       </label>
       {imageUrl && selectedImage && (
-        <Box mt={1} textAlign="center">
+        <Box mt={2}
+        textAlign="center">
+
           {/* <div>Preview:</div> */}
           <img src={imageUrl}
-          alt={selectedImage.name} height="300px" />
+          alt={selectedImage.name} height="200px"
+          />
         </Box>
       )}
     </>

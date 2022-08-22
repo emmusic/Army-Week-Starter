@@ -5413,6 +5413,11 @@ expand-template@^2.0.3:
   resolved "https://registry.npmjs.org/expand-template/-/expand-template-2.0.3.tgz"
   integrity sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==
 
+export-to-csv@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/export-to-csv/-/export-to-csv-0.2.1.tgz#8f997156feebc1cf995096da16341aa0100cce4e"
+  integrity sha512-KTbrd3CAZ0cFceJEZr1e5uiMasabeCpXq1/5uvVxDl53o4jXJHnltasQoj2NkzrxD8hU9kdwjnMhoir/7nNx/A==
+
 express-graphql@^0.12.0:
   version "0.12.0"
   resolved "https://registry.npmjs.org/express-graphql/-/express-graphql-0.12.0.tgz"
@@ -5812,11 +5817,6 @@ fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-
-fullcalendar@^5.11.2:
-  version "5.11.2"
-  resolved "https://registry.yarnpkg.com/fullcalendar/-/fullcalendar-5.11.2.tgz#efdafbb40652f7dec8aa4443a75f5c0f397288c3"
-  integrity sha512-gAJTY+4rnWZV2BVrul6Rvl52sidxOyAhN0P8Fp9iYP0mJhTC+2U0oOoN8VKEnyi88QVe0WkFVt6p/pd5XLqBPw==
 
 function-bind@^1.1.1:
   version "1.1.1"

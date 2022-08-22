@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
+// import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 
 //Components
 import Layout from "../components/layout"

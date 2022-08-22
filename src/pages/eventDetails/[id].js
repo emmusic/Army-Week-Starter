@@ -12,12 +12,14 @@ import { green } from '@mui/material/colors';
 import { DownloadRounded } from "@mui/icons-material";
 import Typography from '@mui/material/Typography';
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
+import { PictureAsPdf } from "@mui/icons-material";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 
-import ImagePreview from "../../components/imagePreview";
+// import ImagePreview from "../../components/imagePreview";
+import DownloadBtn from "../../components/Download/downloadBtn.js";
 
 //import the events JSON
 var events = require('../events.json').events;
@@ -40,6 +42,7 @@ function SelectedEvent(props) {
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           Presenter: {specificEvent.Presenter}
+
         </Typography>
         <Typography variant="body2">
           Category: {specificEvent.Category}
@@ -51,6 +54,7 @@ function SelectedEvent(props) {
           Location: {specificEvent.Location}
           <br />
 
+
         </Typography>
       </CardContent>
       <CardActions>
@@ -58,20 +62,19 @@ function SelectedEvent(props) {
 alignItems="center"
 justifyContent="space-evenly"
 >
-
-    {/* <Button variant="contained"
+{/*
+    <Button variant="contained"
     href="/check-in-now"
     sx={{ bgcolor: green[500] }}
-    endIcon={< QrCodeScanner />}>
-    Check in
-  </Button> */}
+    endIcon={< ImagePreview />}>
+    </Button> */}
 
-  <ImagePreview variant="contained"
+  <Button variant="contained"
     sx={{ bgcolor: green[500] }}
     href={`/lookupMaterials/${specificEvent.id}`}
-    endIcon={< ImagePreview />}>
+    endIcon={< PictureAsPdf />}>
     Lookup Materials
-  </ImagePreview>
+  </Button>
 
   <Button variant="contained"
     href="https://www.zoom.us/"
@@ -79,6 +82,9 @@ justifyContent="space-evenly"
     endIcon={< VideoLibraryRoundedIcon />}>
     Zoom Link
   </Button>
+
+  <DownloadBtn>
+    </DownloadBtn>
 
 </Stack>
       </CardActions>
