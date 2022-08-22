@@ -15,7 +15,7 @@ import Grid from '@mui/material/Grid';
 import CheckInButtons from "../components/CheckInButton/checkInBtn"
 
 //import the events JSON
-var allevents = require('./events.json').events;
+var allevents = require('../data/events.json').events;
 //filtering out Lunch and Break from the event list
 var events = allevents.filter(function (event) {
   return event.Break !== true;

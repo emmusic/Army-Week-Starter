@@ -8,7 +8,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import listPlugin from '@fullcalendar/list';
 import Grid from '@mui/material/Grid';
 
-const allevents = require('./events.json').events;
+const allevents = require('../data/events.json').events;
 
 function Cal() {
     return (

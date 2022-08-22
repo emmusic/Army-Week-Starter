@@ -22,6 +22,7 @@
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
     "gatsby-source-filesystem": "^4.20.0",
+    "gatsby-transformer-json": "^4.21.0",
     "gatsby-transformer-sharp": "^4.20.0",
     "html5-qrcode": "^2.2.1",
     "main": "index.html",
