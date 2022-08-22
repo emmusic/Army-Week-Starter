@@ -11,9 +11,9 @@
         "Presenter": "N/A",
         "Location": "N/A",
         "id": 0,
-        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
-        "color": "#76b079" 
+        "Materials": [{"filename": "file.txt"}, {"filename": "Event 1.doc"}],
+        "Zoom Link": "",
+        "color": "#76b079"
        },
        {
         "Day": "1",
@@ -27,7 +27,7 @@
         "Location": "Room 106",
         "id": 1,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -42,9 +42,9 @@
         "Location": "Room 106",
         "id": 2,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -57,9 +57,9 @@
         "Location": "Room 106",
         "id": 3,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -73,9 +73,9 @@
         "id": 4,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -88,7 +88,7 @@
         "Location": "Room 106",
         "id": 5,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -103,9 +103,9 @@
         "Location": "Room 106",
         "id": 6,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -119,9 +119,9 @@
         "id": 7,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -134,9 +134,9 @@
         "Location": "Room 106",
         "id": 8,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -149,9 +149,9 @@
         "Location": "Room 106",
         "id": 9,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -165,9 +165,9 @@
         "id": 10,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -180,9 +180,9 @@
         "Location": "Room 106",
         "id": 11,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -195,9 +195,9 @@
         "Location": "Room 106",
         "id": 12,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -207,12 +207,12 @@
         "Category": "Army Council",
         "title": "Closing Points",
         "Presenter": "DAS",
-        "Location": "Room 106", 
+        "Location": "Room 106",
         "id": 13,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
-       },   
+       },
        {
         "Day": "1",
         "Date": "Tue Sept 13",
@@ -222,10 +222,10 @@
         "Category": "AC Reception",
         "title": "AC Reception",
         "Presenter": "COS Ops",
-        "Location": "Room 304", 
+        "Location": "Room 304",
         "id": 14,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#3e6990"
        },
        {
@@ -240,7 +240,7 @@
         "Location": "Room 106",
         "id": 15,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -255,7 +255,7 @@
         "Location": "Room 106",
         "id": 16,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -270,7 +270,7 @@
         "Location": "Room 106",
         "id": 17,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -285,7 +285,7 @@
         "Location": "Room 106",
         "id": 18,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -301,7 +301,7 @@
         "id": 19,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
        },
        {
@@ -316,7 +316,7 @@
         "Location": "Room 106",
         "id": 20,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -331,7 +331,7 @@
         "Location": "Room 106",
         "id": 21,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -347,7 +347,7 @@
         "id": 22,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
        },
        {
@@ -362,7 +362,7 @@
         "Location": "Room 106",
         "id": 23,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -377,7 +377,7 @@
         "Location": "Room 106H",
         "id": 24,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#f39b6d"
        },
        {
@@ -392,7 +392,7 @@
         "Location": "Offsite",
         "id": 25,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#f67e7d"
        },
        {
@@ -407,7 +407,7 @@
         "Location": "Room 106",
         "id": 26,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -422,7 +422,7 @@
         "Location": "Room 106",
         "id": 27,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -437,7 +437,7 @@
         "Location": "Room 106",
         "id": 28,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -453,7 +453,7 @@
         "id": 29,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
        },
        {
@@ -468,7 +468,7 @@
         "Location": "Room 106",
         "id": 30,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -484,7 +484,7 @@
         "id": 31,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
        },
        {
@@ -499,7 +499,7 @@
         "Location": "Room 106",
         "id": 32,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -515,7 +515,7 @@
         "id": 33,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#bdb48a"
        },
        {
@@ -530,7 +530,7 @@
         "Location": "Room 106",
         "id": 34,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -545,7 +545,7 @@
         "Location": "Room 106",
         "id": 35,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -560,7 +560,7 @@
         "Location": "Room 106",
         "id": 36,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -575,7 +575,7 @@
         "Location": "Hotel Restaurant",
         "id": 37,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -590,7 +590,7 @@
         "Location": "Room 106",
         "id": 38,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -605,7 +605,7 @@
         "Location": "Room 106",
         "id": 39,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -620,7 +620,7 @@
         "Location": "Room 106",
         "id": 40,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -635,7 +635,7 @@
         "Location": "Room 106",
         "id": 41,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#76b079"
        },
        {
@@ -650,10 +650,8 @@
         "Location": "Offsite",
         "id": 42,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "Zoom Link": "", 
+        "Zoom Link": "",
         "color": "#f67e7d"
        }
     ]
     }
-    
-    

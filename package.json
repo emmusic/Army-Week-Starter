@@ -8,19 +8,14 @@
     "@babel/core": "^7.12.3",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-<<<<<<< Updated upstream
     "@fullcalendar/daygrid": "^5.11.2",
     "@fullcalendar/interaction": "^5.11.2",
     "@fullcalendar/list": "^5.11.2",
     "@fullcalendar/react": "^5.11.2",
     "@fullcalendar/timegrid": "^5.11.2",
-=======
-    "@fullcalendar/react": "^5.11.2",
->>>>>>> Stashed changes
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
     "description": "",
-    "fullcalendar": "^5.11.2",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",

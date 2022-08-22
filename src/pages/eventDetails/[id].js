@@ -73,18 +73,18 @@ alignItems="center"
 justifyContent="space-evenly"
 >
 
-    <Button variant="contained"
+    {/* <Button variant="contained"
     href="/check-in-now"
     sx={{ bgcolor: green[500] }}
     endIcon={< QrCodeScanner />}>
     Check in
-  </Button>
+  </Button> */}
 
   <Button variant="contained"
     sx={{ bgcolor: green[500] }}
     href={`/lookupMaterials/${specificEvent.id}`}
     endIcon={< DownloadRounded />}>
-    Lookup Materials
+    Lookup Materials v
   </Button>
 
   <Button variant="contained"
@@ -97,8 +97,7 @@ justifyContent="space-evenly"
 </Stack>
       </CardActions>
     </Card>
-          
-           
+
         </Layout>
     );
 }

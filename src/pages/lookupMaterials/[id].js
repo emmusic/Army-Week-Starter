@@ -4,6 +4,11 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Bottombar from "../../components/Bottombar/bottombar"
+import ImagePreview from "../../components/imagePreview"
+
+//Docs
+import * as Docs from "../../docs"
+
 
 //MUI
 import Stack from '@mui/material/Stack';
@@ -19,6 +24,10 @@ import { QrCodeScanner } from "@mui/icons-material";
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from "@mui/material/Grid";
+import { ListItemButton } from "@mui/material"
+import Input from "@mui/material"
+
+
 
 
 //import the events JSON
@@ -38,7 +47,6 @@ function LookupMaterials(props) {
                {""}
                 </p>
 
-
                <React.Fragment>
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
@@ -50,11 +58,25 @@ function LookupMaterials(props) {
         {specificEvent.Materials.map(material => {
           return (
             <ListItem>
-            {/* <ListItemButton href={``}> */}
+            <ListItemButton href={'src/docs/Event 1'}>
             <Grid item xs={12}>
               <ListItemText>{material.filename}</ListItemText>
+
+              <input type="file"/>
+                       <input
+                          accept="image/*"
+                          type="file"
+                          id="select-image"
+                          style={{ display: 'none' }}
+                        />
+
+
+              <ImagePreview></ImagePreview>
+
+
+
               </Grid>
-            {/* </ListItemButton> */}
+            </ListItemButton>
             </ListItem>
           );
             })}
