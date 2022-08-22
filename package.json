@@ -17,7 +17,6 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
     "description": "",
-    "fullcalendar": "^5.11.2",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.21.0",
     "gatsby-plugin-manifest": "^4.20.0",

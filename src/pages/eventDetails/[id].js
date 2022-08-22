@@ -17,6 +17,8 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 
+import ImagePreview from "../../components/imagePreview";
+
 //import the events JSON
 var events = require('../events.json').events;
 
@@ -64,12 +66,12 @@ justifyContent="space-evenly"
     Check in
   </Button> */}
 
-  <Button variant="contained"
+  <ImagePreview variant="contained"
     sx={{ bgcolor: green[500] }}
     href={`/lookupMaterials/${specificEvent.id}`}
-    endIcon={< DownloadRounded />}>
+    endIcon={< ImagePreview />}>
     Lookup Materials
-  </Button>
+  </ImagePreview>
 
   <Button variant="contained"
     href="https://www.zoom.us/"
@@ -81,8 +83,7 @@ justifyContent="space-evenly"
 </Stack>
       </CardActions>
     </Card>
-          
-           
+
         </Layout>
     );
 }
