@@ -14,7 +14,7 @@ import * as Docs from "../../docs"
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { green } from '@mui/material/colors';
-import { DownloadRounded } from "@mui/icons-material";
+// import { DownloadRounded } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
@@ -26,7 +26,9 @@ import Grid from "@mui/material/Grid";
 import { ListItemButton } from "@mui/material"
 import Input from "@mui/material"
 import TextField from "@mui/material"
+import DownloadBtn from "../../components/Download/downloadBtn"
 import DownloadArray from "../../components/Download/downloadArray"
+// import DownloadArray from "../../components/Download/downloadArray"
 
 //import the events JSON
 var events = require('../../data/events.json').events;
@@ -43,7 +45,11 @@ function LookupMaterials(props) {
           <h5>Lookup Materials</h5>
                <p>
                {""}
-               <DownloadArray>
+               <DownloadBtn>
+              </DownloadBtn>
+
+              <DownloadArray>
+
               </DownloadArray>
                 </p>
 
@@ -59,7 +65,7 @@ function LookupMaterials(props) {
         {specificEvent.Materials.map(material => {
           return (
             <ListItem>
-            <ListItemButton href={'src/docs/event-1'}>
+            <ListItemButton href={'src/docs/event-1.txt'}>
             <Grid item xs={12}>
               <ListItemText>{material.filename}</ListItemText>
 
@@ -119,9 +125,6 @@ function LookupMaterials(props) {
                 endIcon={< DownloadRounded />}>
                 Download
               </Button> */}
-
-
-
 
                 <Button variant="contained"
                 href="https://www.zoom.us/"

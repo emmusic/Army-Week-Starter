@@ -52,14 +52,14 @@ values:data
     console.log('The link was clicked.');
     console.log(this.state.values);
     alert('The link was clicked..ouuuu does it do anything?.');
-    axios.get('/DownlodedDataExport').then(response => {
+    axios.get('/DownloadedDataExport').then(response => {
     console.log(response)
 
 })
 
 axios({
 
-    url: '../../components/docs/',
+    url: 'src/docs/',
     //'/files/saveJson'
     method: 'GET',
     responseType: 'blob', // important
@@ -82,11 +82,11 @@ handleClick1 = (e) => {
 
 e.preventDefault();
 
-console.log('The link was clicked... omg I hope it works.');
+console.log('The link was clicked... what does it do?');
 
 alert('You clicked the link! Pray the dwan gremlins dont gobble it up.');
 
-axios.get('/DownlodedDataExport').then(response => {
+axios.get('/DownloadedDataExport').then(response => {
 
 console.log(response)
 
@@ -106,9 +106,9 @@ const url = window.URL.createObjectURL(new Blob([response.data],{type: "binary/o
 
 const link = document.createElement('a');
 
-//     link.download = `event-1.txt`;
-//     link.href = "../../components/docs/event-1.txt";
-//     link.click();
+    link.download = `event-1.txt`;
+    link.href = "src/docs/event-1.txt";
+    link.click();
 
 
 link.href = url;
@@ -133,11 +133,11 @@ return (
 <TableHead>
 <TableRow>
 
-<TableCell align="center">VIN</TableCell>
+<TableCell align="center">Event Name</TableCell>
 
 <TableCell align="center">File Name</TableCell>
 
-<TableCell align="center">Price</TableCell>
+<TableCell align="center">Presenter</TableCell>
 
 </TableRow>
 

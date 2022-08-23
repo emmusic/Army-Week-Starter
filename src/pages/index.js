@@ -18,15 +18,11 @@ const links = [
 ]
 
 const samplePageLinks = [
-  {
-    text: "All Events",
-    url: "allevents"
-  },
-{ text: "Check in now", url: "qrApp"},
+  {  text: "All Events", url: "allevents" },
+{ text: "Venue", url: "venueinfo"},
 { text: "Calendar", url: "calendar" },
 { text: "FAQ", url: "faq" }
 ]
-
 
 const moreLinks = [
 

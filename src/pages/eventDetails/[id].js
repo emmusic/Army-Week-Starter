@@ -26,6 +26,7 @@ import Grid from '@mui/material/Grid';
 
 // import ImagePreview from "../../components/imagePreview";
 import DownloadBtn from "../../components/Download/downloadBtn.js";
+import downloadArray from "../../components/Download/downloadArray"
 
 
 //import the events JSON
@@ -57,7 +58,7 @@ function SelectedEvent(props) {
 
         <Layout>
           <Card sx={{ minWidth: 300 }}>
-      <CardContent>        
+      <CardContent>
         <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
         Selected Event - Details
         </Typography>
@@ -81,7 +82,7 @@ function SelectedEvent(props) {
         </Typography>
 
       </CardContent>
-      <CardActions>      
+      <CardActions>
       <Stack spacing={2} direction="row"
 alignItems="center"
 justifyContent="space-evenly"
@@ -140,7 +141,7 @@ justifyContent="space-evenly"
               );
             })}
             </CardContent>
-    </Card>  
+    </Card>
 
         </Layout>
     );
