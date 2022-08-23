@@ -1,4 +1,5 @@
 import * as React from "react"
+import LocalizedStrings from 'react-localization';
 
 //Components
 import Layout from "../../components/layout"
@@ -29,18 +30,33 @@ import { ListItemButton } from "@mui/material"
 import DownloadArray from "../../components/Download/downloadArray"
 
 //import the events JSON
-var events = require('../../data/events.json').events;
+var en = require('../../data/enevents.json').events;
+var fr = require('../../data/frevents.json').events;
 
+//Localization Strings
+let strings = new LocalizedStrings({
+  en: {
+    events: {en},
+    title: "Lookup Materials",
+    zoomlink: "Zoom Link",
+  },
+  fr: {
+    events: {fr},
+    title: "Lookup Materials",
+    zoomlink: "Lien pour Zoom",
+  }
+})
 
 function LookupMaterials(props) {
     const eventId = props.params.id
+    const events = strings.events[navigator.language]
     var specificEvent = events[eventId];
 
     return (
 
         <Layout>
 
-          <h5>Lookup Materials</h5>
+          <h5>{strings.title}</h5>
                <p>
                {""}
                <DownloadArray>
@@ -127,7 +143,7 @@ function LookupMaterials(props) {
                 href="https://www.zoom.us/"
                 sx={{ bgcolor: green[500] }}
                 endIcon={< VideoLibraryRoundedIcon />}>
-                Zoom Link
+                {strings.zoomlink}
               </Button>
 
             </Stack>

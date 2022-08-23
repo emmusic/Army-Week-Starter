@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import LocalizedStrings from 'react-localization';
 
 //Components
 import Layout from "../../components/layout"
@@ -21,12 +22,39 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 
-
 // import ImagePreview from "../../components/imagePreview";
 
 
 //import the events JSON
-var events = require('../../data/events.json').events;
+var en = require('../../data/enevents.json').events;
+var fr = require('../../data/frevents.json').events;
+
+let strings = new LocalizedStrings({
+  en: {
+    events: {en},
+    title: "Selected Event - Details",
+    presenter: "Presenter:",
+    category: "Category:",
+    date: "Date:",
+    time: "Time:",
+    location: "Location",
+    lookupmaterials: "Lookup Materials",
+    zoomlink: "Zoom Link",
+    floorplan: "Floorplan",
+  },
+  fr: {
+    events: {fr},
+    title: "Évènement selectionné - Détails",
+    presenter: "Présentateur:",
+    category: "Catégorie:",
+    date: "Date:",
+    time: "Heure:",
+    location: "Lieu",
+    lookupmaterials: "Lookup Materials",
+    zoomlink: "Lien pour Zoom",
+    floorplan: "Plan d'étage",
+  }
+})
 
 function SelectedEvent(props) {
   const data = useStaticQuery(graphql`{
@@ -43,6 +71,7 @@ function SelectedEvent(props) {
   }`);
 
   const eventId = props.params.id
+  const events = strings.events[navigator.language]
   // For this line below to work the events need to stay in the correct order where their id=index
   var specificEvent = events[eventId];
 
@@ -56,23 +85,23 @@ function SelectedEvent(props) {
           <Card sx={{ minWidth: 300 }}>
       <CardContent>        
         <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
-        Selected Event - Details
+        {strings.title}
         </Typography>
         <Typography variant="h5" component="div">
           {specificEvent.title}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Presenter: {specificEvent.Presenter}
+          {strings.presenter} {specificEvent.Presenter}
 
         </Typography>
         <Typography variant="body2">
-          Category: {specificEvent.Category}
+          {strings.category} {specificEvent.Category}
           <br />
-          date: {specificEvent.date}
+          {strings.date} {specificEvent.date}
           <br />
-          Time: {specificEvent.Time}
+          {strings.time} {specificEvent.Time}
           <br />
-          Location: {specificEvent.location}
+          {strings.location}: {specificEvent.location}
           <br />
 
         </Typography>
@@ -94,14 +123,14 @@ justifyContent="space-evenly"
     sx={{ bgcolor: green[500] }}
     href={`/lookupMaterials/${specificEvent.id}`}
     endIcon={< PictureAsPdf />}>
-    Lookup Materials
+    {strings.lookupmaterials}
   </Button>
 
   <Button variant="contained"
     href="https://www.zoom.us/"
     sx={{ bgcolor: green[500] }}
     endIcon={< VideoLibraryRoundedIcon />}>
-    Zoom Link
+    {strings.zoomlink}
   </Button>
 
 </Stack>
@@ -115,7 +144,7 @@ justifyContent="space-evenly"
           return (
             <Grid>
             <Typography variant="h6" component="div">
-              {specificEvent.location} Floorplan
+              {specificEvent.location} {strings.floorplan}
             </Typography>
             <GatsbyImage image={getImage(x.node)} alt="Room Floorplan"/>
             </Grid>
@@ -127,7 +156,7 @@ justifyContent="space-evenly"
               return (
                 <Grid>
                 <Typography variant="h6" component="div">
-                {specificEvent.location} Location
+                {specificEvent.location} {strings.location}
                 </Typography>
                 <GatsbyImage image={getImage(x.node)} alt="Venue Floorplan"/>
                 </Grid>
