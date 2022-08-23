@@ -156,7 +156,7 @@ justifyContent="space-evenly"
               return (
                 <Grid>
                 <Typography variant="h6" component="div">
-                {specificEvent.location} {strings.location}
+                {strings.location}
                 </Typography>
                 <GatsbyImage image={getImage(x.node)} alt="Venue Floorplan"/>
                 </Grid>
