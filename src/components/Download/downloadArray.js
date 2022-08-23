@@ -102,7 +102,7 @@ responseType: 'blob', // important
 
 }).then((response) => {
 
-const url = window.URL.createObjectURL(new Blob([response.data],{type: "application/octet-stream", responseType: 'arraybuffer'}));
+const url = window.URL.createObjectURL(new Blob([response.data],{type: "binary/octet-stream", responseType: 'arraybuffer'}));
 
 const link = document.createElement('a');
 
