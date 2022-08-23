@@ -9,9 +9,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
+<<<<<<< Updated upstream:src/components/navbar/navbar.js
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+=======
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Tooltip from '@mui/material/Tooltip';
+import MenuItem from '@mui/material/MenuItem';
+>>>>>>> Stashed changes:src/components/Navbar/navbar.js
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import PropTypes from 'prop-types';
 import { Link as RouterLink, MemoryRouter } from 'react-router-dom';
@@ -74,7 +80,7 @@ const ResponsiveAppBar = () => {
             <IconButton
 =======
           <Box sx={{ flexGrow: 5, display: { xs: 'flex', md: 'none' } }}>
-          {/*<Tooltip title="Open settings">
+           <Tooltip title="Open settings">
               <IconButton
 >>>>>>> Stashed changes:src/components/Navbar/navbar.js
               size="large"
@@ -87,8 +93,12 @@ const ResponsiveAppBar = () => {
               <MenuIcon />
             </IconButton>
 <<<<<<< Updated upstream:src/components/navbar/navbar.js
+<<<<<<< Updated upstream:src/components/navbar/navbar.js
 =======
             </Tooltip>*/}
+>>>>>>> Stashed changes:src/components/Navbar/navbar.js
+=======
+            </Tooltip>
 >>>>>>> Stashed changes:src/components/Navbar/navbar.js
             <Menu
               id="menu-appbar"
@@ -197,6 +207,7 @@ const ResponsiveAppBar = () => {
           </Box>
 
 <<<<<<< Updated upstream:src/components/navbar/navbar.js
+<<<<<<< Updated upstream:src/components/navbar/navbar.js
           <Box sx={{ flexGrow: 0 }}>
 =======
           {/*<Box>
@@ -204,6 +215,20 @@ const ResponsiveAppBar = () => {
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+=======
+       <Box>
+              <Tooltip title="Open settings">
+            <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar2"
+                aria-haspopup="true"
+                onClick={handleOpenUserMenu}
+                color="inherit"
+                textAlign="right"
+              >
+                <AccountCircle />
+>>>>>>> Stashed changes:src/components/Navbar/navbar.js
               </IconButton>
             </Tooltip>
             <Menu
@@ -228,7 +253,7 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>*/}
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
