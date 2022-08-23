@@ -1,5 +1,6 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
+import LocalizedStrings from 'react-localization';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 //import IconButton from '@mui/material/IconButton';
@@ -20,6 +21,17 @@ import { Stack } from '@mui/material';
 
 
 const settings = ['Profile', 'Dashboard', 'Logout'];
+
+let strings = new LocalizedStrings({
+  en: {Calendar: "Calendar",
+  Venueinfo: "Venue Info",
+  Help: "Help"
+  },
+  fr: {Calendar: "Calendrier",
+  Venueinfo: "L'information du site",
+  Help: "Aide"
+  }
+})
 
 
 const ResponsiveAppBar = () => {
@@ -150,16 +162,16 @@ const ResponsiveAppBar = () => {
                   <Router>
                       <Stack spacing={2}>
                         <Button href="/calendar" color="success" target="_self" variant="contained">
-                        Calendar
+                        {strings.Calendar}
                         </Button>
                         <Button href="/venueinfo" color="success" target="_blank" variant="contained">
-                        Venue Info
+                        {strings.Venueinfo}
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button> */}
                         <Button href="/faq" color="success" target="_self" variant="contained">
-                        Help
+                        {strings.Help}
                         </Button>
                         </Stack>
                     </Router>
@@ -191,16 +203,16 @@ const ResponsiveAppBar = () => {
                 <ThemeProvider theme={theme}>
                     <Router>
                     <Button href="/calendar" color="success" target="_top" variant="contained">
-                        Calendar
+                        {strings.Calendar}
                         </Button>
                         <Button href="/venueinfo" color="success" target="_blank" variant="contained">
-                        Venue Info
+                        {strings.Venueinfo}
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button> */}
                         <Button href="/faq" color="success" target="_top" variant="contained">
-                        Help
+                        {strings.Help}
                         </Button>
                     </Router>
 

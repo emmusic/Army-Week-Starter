@@ -1,16 +1,31 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import LocalizedStrings from 'react-localization';
 
 //Components
 import Layout from "../components/layout"
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
+let strings = new LocalizedStrings({
+    en: {title: "Venue Info",
+    address: "Ottawa Conference and Event Centre, 200 Coventry Road, Ottawa, ON",
+    moreinfo: "More Information",
+    floorplantitle: "Floorplan"
+    },
+    fr: {
+        title: "L'information du site",
+        address: "Ottawa Conference and Event Centre, 200 Coventry Road, Ottawa, ON",
+        moreinfo: "Plus d'information",
+        floorplantitle: "Plan d'étage"
+    }
+})
+
 function VenueInfo () {
     return (
         <Layout>
-            <h2>Venue Info</h2>
-            <h5>Ottawa Conference and Event Centre, 200 Coventry Road, Ottawa, ON</h5>
+            <h2>{strings.title}</h2>
+            <h5>{strings.address}</h5>
             <Grid container spacing={2} alignItems="center" justifyContent="center">
             <Grid item xs={12}>
             <iframe
@@ -24,8 +39,8 @@ function VenueInfo () {
             ></iframe>
             </Grid>
             <Grid item xs={12}>
-            <Button variant="contained" color="success" href="https://ottawaconferenceandeventcentre.com/our-facilities/">More Information</Button>
-            <h3>Floor Plan</h3>
+            <Button variant="contained" color="success" href="https://ottawaconferenceandeventcentre.com/our-facilities/">{strings.moreinfo}</Button>
+            <h3>{strings.floorplantitle}</h3>
             <StaticImage src="../images/floor1-1.png" alt="floorplan" />
             <StaticImage src="../images/floor2.png" alt="floorplan" />
             <StaticImage src="../images/floor3.png" alt="floorplan" />
