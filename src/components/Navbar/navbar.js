@@ -25,11 +25,13 @@ const settings = ['Profile', 'Dashboard', 'Logout'];
 let strings = new LocalizedStrings({
   en: {Calendar: "Calendar",
   Venueinfo: "Venue Info",
-  Help: "Help"
+  Help: "Help",
+  title: "ARMY WEEK 2022"
   },
   fr: {Calendar: "Calendrier",
   Venueinfo: "L'information du site",
-  Help: "Aide"
+  Help: "Aide",
+  title: "SEMAINE DE L'ARMÉE 2022"
   }
 })
 
@@ -123,7 +125,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            ARMY WEEK 2022
+            {strings.title}
           </Typography>
 
           <Box sx={{ flexGrow: 5, display: { xs: 'flex', md: 'none' } }}>
