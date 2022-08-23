@@ -14,10 +14,18 @@ import Button from '@mui/material/Button';
 import { green } from '@mui/material/colors';
 import Typography from '@mui/material/Typography';
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
+
+import { PictureAsPdf } from "@mui/icons-material";
+import Box from '@mui/material/Box';
+
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
+
+
+// import ImagePreview from "../../components/imagePreview";
+import DownloadBtn from "../../components/Download/downloadBtn.js";
 
 
 //import the events JSON
@@ -58,6 +66,7 @@ function SelectedEvent(props) {
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           Presenter: {specificEvent.Presenter}
+
         </Typography>
         <Typography variant="body2">
           Category: {specificEvent.Category}
@@ -68,27 +77,28 @@ function SelectedEvent(props) {
           <br />
           Location: {specificEvent.location}
           <br />
-        </Typography>   
+
+        </Typography>
+
       </CardContent>
       <CardActions>      
       <Stack spacing={2} direction="row"
 alignItems="center"
 justifyContent="space-evenly"
 >
-
-    {/* <Button variant="contained"
+{/*
+    <Button variant="contained"
     href="/check-in-now"
     sx={{ bgcolor: green[500] }}
-    endIcon={< QrCodeScanner />}>
-    Check in
-  </Button> */}
+    endIcon={< ImagePreview />}>
+    </Button> */}
 
-  <ImagePreview variant="contained"
+  <Button variant="contained"
     sx={{ bgcolor: green[500] }}
     href={`/lookupMaterials/${specificEvent.id}`}
-    endIcon={< ImagePreview />}>
+    endIcon={< PictureAsPdf />}>
     Lookup Materials
-  </ImagePreview>
+  </Button>
 
   <Button variant="contained"
     href="https://www.zoom.us/"
@@ -96,6 +106,9 @@ justifyContent="space-evenly"
     endIcon={< VideoLibraryRoundedIcon />}>
     Zoom Link
   </Button>
+
+  <DownloadBtn>
+    </DownloadBtn>
 
 </Stack>
 

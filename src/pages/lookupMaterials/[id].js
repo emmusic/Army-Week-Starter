@@ -4,6 +4,7 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import ImagePreview from "../../components/imagePreview"
+import downloadArray from "../../components/Download/downloadArray"
 
 //Docs
 import * as Docs from "../../docs"
@@ -25,6 +26,7 @@ import Grid from "@mui/material/Grid";
 import { ListItemButton } from "@mui/material"
 import Input from "@mui/material"
 import TextField from "@mui/material"
+import DownloadArray from "../../components/Download/downloadArray"
 
 //import the events JSON
 var events = require('../../data/events.json').events;
@@ -41,12 +43,15 @@ function LookupMaterials(props) {
           <h5>Lookup Materials</h5>
                <p>
                {""}
+               <DownloadArray>
+              </DownloadArray>
                 </p>
 
                <React.Fragment>
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
-        <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
+        <Typography variant="h5"
+        gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
         {specificEvent.title}
         </Typography>
 
@@ -54,7 +59,7 @@ function LookupMaterials(props) {
         {specificEvent.Materials.map(material => {
           return (
             <ListItem>
-            <ListItemButton href={'src/docs/Event 1'}>
+            <ListItemButton href={'src/docs/event-1'}>
             <Grid item xs={12}>
               <ListItemText>{material.filename}</ListItemText>
 
@@ -68,16 +73,11 @@ function LookupMaterials(props) {
 
 
 
-
-              <ImagePreview></ImagePreview>
-
-
-
               </Grid>
             </ListItemButton>
             </ListItem>
           );
-            })}
+     })}
 
       </Paper>
 
@@ -114,11 +114,13 @@ function LookupMaterials(props) {
                 Check in
               </Button> */}
 
-              <Button variant="contained"
+              {/* <Button variant="contained"
                 sx={{ bgcolor: green[500] }}
                 endIcon={< DownloadRounded />}>
                 Download
-              </Button>
+              </Button> */}
+
+
 
 
                 <Button variant="contained"
