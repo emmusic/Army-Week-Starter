@@ -5,8 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 //Components
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import ImagePreview from "../../components/imagePreview";
-
 
 //MUI
 import Stack from '@mui/material/Stack';
@@ -25,7 +23,6 @@ import Grid from '@mui/material/Grid';
 
 
 // import ImagePreview from "../../components/imagePreview";
-import DownloadBtn from "../../components/Download/downloadBtn.js";
 
 
 //import the events JSON
@@ -106,9 +103,6 @@ justifyContent="space-evenly"
     endIcon={< VideoLibraryRoundedIcon />}>
     Zoom Link
   </Button>
-
-  <DownloadBtn>
-    </DownloadBtn>
 
 </Stack>
 

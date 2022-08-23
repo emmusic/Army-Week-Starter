@@ -26,7 +26,7 @@ function VenueInfo () {
             <Grid item xs={12}>
             <Button variant="contained" color="success" href="https://ottawaconferenceandeventcentre.com/our-facilities/">More Information</Button>
             <h3>Floor Plan</h3>
-            <StaticImage src="../images/floor1.png" alt="floorplan" />
+            <StaticImage src="../images/floor1-1.png" alt="floorplan" />
             <StaticImage src="../images/floor2.png" alt="floorplan" />
             <StaticImage src="../images/floor3.png" alt="floorplan" />
             </Grid>

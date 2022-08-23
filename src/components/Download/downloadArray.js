@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@mui/material/styles";
+// import { withStyles } from "@mui/styles";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -219,4 +219,5 @@ classes: PropTypes.object.isRequired
 
 };
 
-export default withStyles(styles)(SimpleTable);
+// export default withStyles(styles)(SimpleTable);
+export default SimpleTable;

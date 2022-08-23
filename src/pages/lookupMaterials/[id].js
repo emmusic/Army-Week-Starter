@@ -3,11 +3,11 @@ import * as React from "react"
 //Components
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import ImagePreview from "../../components/imagePreview"
-import downloadArray from "../../components/Download/downloadArray"
+// import ImagePreview from "../../components/imagePreview"
+// import downloadArray from "../../components/Download/downloadArray"
 
 //Docs
-import * as Docs from "../../docs"
+// import * as Docs from "../../docs"
 
 
 //MUI
@@ -24,8 +24,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from "@mui/material/Grid";
 import { ListItemButton } from "@mui/material"
-import Input from "@mui/material"
-import TextField from "@mui/material"
+// import Input from "@mui/material"
+// import TextField from "@mui/material"
 import DownloadArray from "../../components/Download/downloadArray"
 
 //import the events JSON
