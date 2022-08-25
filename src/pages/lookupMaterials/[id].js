@@ -28,7 +28,7 @@ import { ListItemButton } from "@mui/material"
 // import Input from "@mui/material"
 // import TextField from "@mui/material"
 
-import PdfApp from "/home/emklassen/Army-Week-Starter-1/src/pages/pdf-viewer.js";
+// import PdfApp from "/home/emklassen/Army-Week-Starter-1/src/pages/pdf-viewer.js";
 
 //import the events JSON
 var en = require('../../data/enevents.json').events;
@@ -61,8 +61,8 @@ function LookupMaterials(props) {
           <h5>{strings.title}</h5>
                <p>
                {""}
-               <PdfApp>
-               </PdfApp>
+               {/* <PdfApp>
+               </PdfApp> */}
                 </p>
 
                <React.Fragment>
