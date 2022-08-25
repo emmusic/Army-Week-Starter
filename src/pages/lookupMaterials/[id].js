@@ -4,7 +4,7 @@ import LocalizedStrings from 'react-localization';
 //Components
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-// import ImagePreview from "../../components/imagePreview"
+import ImagePreview from "../../components/imagePreview"
 // import downloadArray from "../../components/Download/downloadArray"
 
 //Docs
@@ -27,7 +27,8 @@ import Grid from "@mui/material/Grid";
 import { ListItemButton } from "@mui/material"
 // import Input from "@mui/material"
 // import TextField from "@mui/material"
-import DownloadArray from "../../components/Download/downloadArray"
+
+import PdfApp from "/home/emklassen/Army-Week-Starter-1/src/pages/pdf-viewer.js";
 
 //import the events JSON
 var en = require('../../data/enevents.json').events;
@@ -47,6 +48,7 @@ let strings = new LocalizedStrings({
   }
 })
 
+
 function LookupMaterials(props) {
     const eventId = props.params.id
     const events = strings.events[navigator.language]
@@ -59,8 +61,8 @@ function LookupMaterials(props) {
           <h5>{strings.title}</h5>
                <p>
                {""}
-               <DownloadArray>
-              </DownloadArray>
+               <PdfApp>
+               </PdfApp>
                 </p>
 
                <React.Fragment>
