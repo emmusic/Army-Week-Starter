@@ -30,7 +30,10 @@ let strings = new LocalizedStrings({
   }
 })
 
-function Cal() {
+export default class Cal extends React.Component {
+  render(){
+    let width = window.innerWidth;
+    if (width>768) {
     return (
       <Grid container spacing={2} alignItems="center" justifyContent="center">
         <Grid item xs={12}>
@@ -66,6 +69,44 @@ function Cal() {
          </Grid>
         </Grid>
     );
+  } else {
+    //For mobile
+    //the same but without week view
+    return (
+      <Grid container spacing={2} alignItems="center" justifyContent="center">
+      <Grid item xs={12}>
+    <ResponsiveAppBar />
+    </Grid>     
+       <Grid item xs={11}>
+      <FullCalendar
+        plugins = {[dayGridPlugin, timeGridPlugin, interactionPlugin, listPlugin]}
+        initialView = "timeGridDay"
+        initialDate = "2022-09-12"
+        locale= {initialLocaleCode}
+        headerToolbar = {{
+          start: 'timeGridDay,listWeek',
+          // center: 'title',   
+          end: 'prev,next'
+        }}
+        buttonText={{day: strings.day, list: strings.list }}
+        slotMinTime='08:00'
+        height="auto"
+        expandRows={true} 
+        navLinks={true}
+        events = {strings.events[initialLocaleCode]}
+        handleWindowResize={true}           
+        nowIndicator
+        firstDay={1}
+        allDaySlot = {false}
+        contentHeight="auto"
+        slotDuration="00:10:00"
+        eventOverlap = {false}
+        eventClick = {(event) => {var eventId = event.event.id
+          window.open(`/eventDetails/${eventId}`)}}
+      />
+       </Grid>
+      </Grid>
+    )
   }
-
-export default Cal;
+}
+}
