@@ -14,7 +14,7 @@ let strings = new LocalizedStrings({
     floorplantitle: "Floorplan"
     },
     fr: {
-        title: "L'information du site",
+        title: "Informations sur le lieu",
         address: "Ottawa Conference and Event Centre, 200 Coventry Road, Ottawa, ON",
         moreinfo: "Plus d'information",
         floorplantitle: "Plan d'étage"
