@@ -15,14 +15,19 @@ import Typography from '@mui/material/Typography';
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 
 import { PictureAsPdf } from "@mui/icons-material";
-import Box from '@mui/material/Box';
 
+import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 
 // import ImagePreview from "../../components/imagePreview";
+
+// PDF stuff
+import pdf from '/home/emklassen/Army-Week-Starter-1/src/images/OSINT-Overview.pdf'
+import PDF from "react-pdf-js";
+import {ZoomInOutlined, ZoomOutOutlined} from '@ant-design/icons';
 
 
 //import the events JSON
@@ -56,6 +61,7 @@ let strings = new LocalizedStrings({
   }
 })
 
+
 function SelectedEvent(props) {
   const data = useStaticQuery(graphql`{
     allFile {
@@ -79,11 +85,11 @@ function SelectedEvent(props) {
   const roomFloorplan = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.RoomFloorplan)
   const venueFloorplan = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.VenueFloorplan)
 
-    return (
+     return (
 
         <Layout>
           <Card sx={{ minWidth: 300 }}>
-      <CardContent>        
+      <CardContent>
         <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
         {strings.title}
         </Typography>
@@ -107,7 +113,7 @@ function SelectedEvent(props) {
         </Typography>
 
       </CardContent>
-      <CardActions>      
+      <CardActions>
       <Stack spacing={2} direction="row"
 alignItems="center"
 justifyContent="space-evenly"
@@ -163,7 +169,7 @@ justifyContent="space-evenly"
               );
             })}
             </CardContent>
-    </Card>  
+    </Card>
 
         </Layout>
     );
