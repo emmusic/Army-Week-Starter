@@ -43,7 +43,7 @@ let strings = new LocalizedStrings({
     date: "Date:",
     time: "Time:",
     location: "Location",
-    lookupmaterials: "Lookup Materials",
+    lookupmaterials: "Documents",
     zoomlink: "Zoom Link",
     floorplan: "Floorplan",
   },
@@ -55,7 +55,7 @@ let strings = new LocalizedStrings({
     date: "Date:",
     time: "Heure:",
     location: "Lieu",
-    lookupmaterials: "Lookup Materials",
+    lookupmaterials: "Documents",
     zoomlink: "Lien pour Zoom",
     floorplan: "Plan d'étage",
   }

@@ -38,12 +38,12 @@ var fr = require('../../data/frevents.json').events;
 let strings = new LocalizedStrings({
   en: {
     events: {en},
-    title: "Lookup Materials",
+    title: "Documents",
     zoomlink: "Zoom Link",
   },
   fr: {
     events: {fr},
-    title: "Lookup Materials",
+    title: "Documents",
     zoomlink: "Lien pour Zoom",
   }
 })
@@ -73,7 +73,7 @@ function LookupMaterials(props) {
         {specificEvent.title}
         </Typography>
 
-        {/* This is where we list the lookup materials  */}
+        {/* This is where we list the Documents  */}
         {specificEvent.Materials.map(material => {
           return (
             <ListItem>

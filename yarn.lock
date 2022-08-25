@@ -11399,7 +11399,7 @@ vary@^1, vary@~1.1.2:
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-version@1.0.0:
+version@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/version/-/version-0.1.2.tgz#ab071b0e39c9a34e9308dd8cd7845795deeca70f"
   integrity sha512-pU32BxnlMpDnyR8SsRR8amiAmhBZQdTevjYFAMZ9W3eT2wWIJzfjKOH39O1eiCAW4brhyaXe3NpZNFpBAJR56Q==

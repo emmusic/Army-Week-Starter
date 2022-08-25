@@ -29,7 +29,7 @@ let strings = new LocalizedStrings({
   title: "ARMY WEEK 2022"
   },
   fr: {Calendar: "Calendrier",
-  Venueinfo: "L'information du site",
+  Venueinfo: "Informations sur le lieu",
   Help: "Aide",
   title: "SEMAINE DE L'ARMÉE 2022"
   }
