@@ -13,7 +13,7 @@
         "RoomFloorplan": "",
         "VenueFloorplan": "",
         "id": 0,
-        "Materials": [{"filename": "file.txt"}, {"filename": "Event 1.doc"}],
+        "Materials": "presentation/OSINT-Overview.pdf",
         "ZoomLink": "",
         "color": "#76b079"
        },

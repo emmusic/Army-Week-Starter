@@ -1,11 +1,14 @@
-import * as React from "react"
+import React, {useState} from "react"
 import LocalizedStrings from 'react-localization';
+import { useStaticQuery, graphql } from 'gatsby'
+
 
 //Components
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import ImagePreview from "../../components/imagePreview"
+// import ImagePreview from "../../components/imagePreview"
 // import downloadArray from "../../components/Download/downloadArray"
+import PdfViewer from '../../components/PdfViewer/pdfViewer.js'
 
 //Docs
 // import * as Docs from "../../docs"
@@ -15,20 +18,19 @@ import ImagePreview from "../../components/imagePreview"
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { green } from '@mui/material/colors';
-import { DownloadRounded } from "@mui/icons-material";
+// import { DownloadRounded } from "@mui/icons-material";
 import VideoLibraryRoundedIcon from '@mui/icons-material/VideoLibraryRounded';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Grid from "@mui/material/Grid";
-import { ListItemButton } from "@mui/material"
+// import ListItem from '@mui/material/ListItem';
+// import ListItemText from '@mui/material/ListItemText';
+// import Grid from "@mui/material/Grid";
+// import { ListItemButton } from "@mui/material"
+import { PictureAsPdf } from '@mui/icons-material';
 // import Input from "@mui/material"
 // import TextField from "@mui/material"
-
-// import PdfApp from "/home/emklassen/Army-Week-Starter-1/src/pages/pdf-viewer.js";
 
 //import the events JSON
 var en = require('../../data/enevents.json').events;
@@ -50,9 +52,24 @@ let strings = new LocalizedStrings({
 
 
 function LookupMaterials(props) {
+  const data = useStaticQuery(graphql`{
+    allFile {
+      edges {
+        node {
+          relativePath
+          ext
+          name
+        }
+      }
+    }
+  }`);
+
     const eventId = props.params.id
     const events = strings.events[navigator.language]
     var specificEvent = events[eventId];
+
+    const eventPresentation = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.Materials)
+    const [showPdf, setShowPdf] = useState(false)
 
     return (
 
@@ -61,8 +78,12 @@ function LookupMaterials(props) {
           <h5>{strings.title}</h5>
                <p>
                {""}
-               {/* <PdfApp>
-               </PdfApp> */}
+               <PdfViewer pdf={eventPresentation}
+                    onCancel={()=>setShowPdf(false)}
+                    visible={showPdf}/>
+         <PictureAsPdf onClick={()=>setShowPdf(!showPdf)}>
+            Display Pdf
+         </PictureAsPdf>
                 </p>
 
                <React.Fragment>
@@ -74,7 +95,8 @@ function LookupMaterials(props) {
         </Typography>
 
         {/* This is where we list the Documents  */}
-        {specificEvent.Materials.map(material => {
+        
+        {/* {specificEvent.Materials.map(material => {
           return (
             <ListItem>
             <ListItemButton href={'src/docs/event-1'}>
@@ -95,7 +117,7 @@ function LookupMaterials(props) {
             </ListItemButton>
             </ListItem>
           );
-     })}
+     })} */}
 
       </Paper>
 
@@ -122,15 +144,6 @@ function LookupMaterials(props) {
             alignItems="center"
             justifyContent="space-evenly"
             >
-
-
-
-            {/* <Button variant="contained"
-                href="/check-in-now"
-                sx={{ bgcolor: green[500] }}
-                endIcon={< QrCodeScanner />}>
-                Check in
-              </Button> */}
 
               {/* <Button variant="contained"
                 sx={{ bgcolor: green[500] }}

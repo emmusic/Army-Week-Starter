@@ -1,41 +1,13 @@
 import React, {useState} from "react";
 import "antd/dist/antd.css";
 import {Modal, Button} from "antd";
-import PDF from "react-pdf-js";
+import Pdf from "react-pdf-js";
 import {ZoomInOutlined, ZoomOutOutlined} from '@ant-design/icons';
 
 
 const PdfViewer = ({pdf, onCancel, visible}) => {
 
-//     const [page, setPage] = useState(1);
-//    const [pages, setPages] = useState(null);
-//    const onDocumentError = (err) => {
-//       console.error('pdf viewer error:', err);
-//    }
-//    const onDocumentComplete = (numPages) =>{
-//       setPages(numPages)
-//    }
-
-//     return(
-//          <Modal visible={visible}
-//                 onCancel={onCancel}
-//                 maskClosable={false}
-//                 width={"30%"}
-//             >
-
-//         <PDF file={pdf}
-//         page={page}
-//         onDocumentError={onDocumentError}
-//         onDocumentComplete={onDocumentComplete}
-//             />
-//             <p style={{textAlign: 'center'}}>
-//                 Page {page} of {pages}
-//             </p>
-//    </Modal>
-//    )
-// };
-
-const [myPdf, setMyPdf] = useState(null);
+// const [myPdf, setMyPdf] = useState(null);
 const [page, setPage] = useState(1);
 const [pages, setPages] = useState(null);
 const [scale, setScale] = useState(1);
@@ -101,7 +73,7 @@ return (<Modal maskClosable={false}
 
 >
 <div className="pdfWrapper">
-    <PDF
+    <Pdf
         file={pdf}
         onDocumentComplete={onDocumentComplete}
         onDocumentError={onDocumentError}

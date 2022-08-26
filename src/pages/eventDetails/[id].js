@@ -25,7 +25,7 @@ import Grid from '@mui/material/Grid';
 // import ImagePreview from "../../components/imagePreview";
 
 // PDF stuff
-// import pdf from '/home/emklassen/Army-Week-Starter-1/src/images/OSINT-Overview.pdf'
+// import pdf from '../../docs/OSINT-Overview.pdf'
 import PDF from "react-pdf-js";
 import {ZoomInOutlined, ZoomOutOutlined} from '@ant-design/icons';
 
