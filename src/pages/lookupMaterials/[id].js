@@ -56,9 +56,11 @@ function LookupMaterials(props) {
     allFile {
       edges {
         node {
-          relativePath
-          ext
+          absolutePath
           name
+          ext
+          relativePath
+          publicURL
         }
       }
     }
@@ -68,7 +70,7 @@ function LookupMaterials(props) {
     const events = strings.events[navigator.language]
     var specificEvent = events[eventId];
 
-    const eventPresentation = data.allFile.edges.filter(edges => edges.node.relativePath === specificEvent.Materials)
+    const eventPresentation = data.allFile.edges.filter(edges => edges.node.name === specificEvent.Materials)
     const [showPdf, setShowPdf] = useState(false)
 
     return (
@@ -76,15 +78,26 @@ function LookupMaterials(props) {
         <Layout>
 
           <h5>{strings.title}</h5>
-               <p>
-               {""}
-               <PdfViewer pdf={eventPresentation}
-                    onCancel={()=>setShowPdf(false)}
-                    visible={showPdf}/>
-         <PictureAsPdf onClick={()=>setShowPdf(!showPdf)}>
-            Display Pdf
-         </PictureAsPdf>
-                </p>
+          {eventPresentation.map(x => {
+              return (
+                <p>
+                <Typography variant="h6" component="div">
+                </Typography>
+                <PdfViewer pdf={x.node.publicURL}
+                     onCancel={()=>setShowPdf(false)}
+                     visible={showPdf}/>
+          <PictureAsPdf onClick={()=>setShowPdf(!showPdf)}>
+             Display Pdf
+          </PictureAsPdf>
+                 </p>
+              );
+            })}
+            {/* <PdfViewer pdf={pdf}
+                     onCancel={()=>setShowPdf(false)}
+                     visible={showPdf}/>
+          <PictureAsPdf onClick={()=>setShowPdf(!showPdf)}>
+             Display Pdf
+          </PictureAsPdf> */}
 
                <React.Fragment>
       <CssBaseline />
@@ -150,9 +163,6 @@ function LookupMaterials(props) {
                 endIcon={< DownloadRounded />}>
                 Download
               </Button> */}
-
-
-
 
                 <Button variant="contained"
                 href="https://www.zoom.us/"
