@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useState, useEffect} from "react"
 import LocalizedStrings from 'react-localization';
 
 //Components
@@ -141,7 +141,12 @@ const config = {
     // tabFocus: true
 };
 
-function Help() {
+export default function Help() {
+    const [initialLocaleCode, setInitialLocaleCode] = useState('en')
+
+    useEffect(() => {
+      setInitialLocaleCode(window.navigator.userLanguage)
+  }, [])
 
     return (
         <Layout>
@@ -174,5 +179,3 @@ function Help() {
         </Layout>
     );
 }
-
-export default Help

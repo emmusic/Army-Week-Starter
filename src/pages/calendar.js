@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from "react"
 import ResponsiveAppBar from '../components/Navbar/navbar';
 import LocalizedStrings from 'react-localization';
 
@@ -9,10 +9,8 @@ import interactionPlugin from '@fullcalendar/interaction';
 import listPlugin from '@fullcalendar/list';
 import Grid from '@mui/material/Grid';
 
-const allevents = require('../data/enevents.json').events;
-
 //gets users browser language
-var initialLocaleCode = navigator.language;
+// var initialLocaleCode = navigator.language;
 
 var en = require('../data/enevents.json').events;
 var fr = require('../data/frevents.json').events;
@@ -30,10 +28,28 @@ let strings = new LocalizedStrings({
   }
 })
 
-export default class Cal extends React.Component {
-  render(){
-    let width = window.innerWidth;
-    if (width>768) {
+export default function Cal(props) {
+  const [initialLocaleCode, setInitialLocaleCode] = useState('en')
+
+  useEffect(() => {
+    setInitialLocaleCode(window.navigator.language)
+}, [])
+
+const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+useEffect(() => {
+  const handleResizeWindow = () => setWindowWidth(window.innerWidth);
+  window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);  
+
+  //Where we decide what width is mobile vs desktop
+  const breakpoint = 700;
+
+  if (windowWidth>breakpoint) {
     return (
       <Grid container spacing={2} alignItems="center" justifyContent="center">
         <Grid item xs={12}>
@@ -108,5 +124,4 @@ export default class Cal extends React.Component {
       </Grid>
     )
   }
-}
 }

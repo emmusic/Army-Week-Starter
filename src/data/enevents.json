@@ -13,8 +13,8 @@
         "RoomFloorplan": "",
         "VenueFloorplan": "",
         "id": 0,
-        "Materials": [{"filename": "file.txt"}, {"filename": "Event 1.doc"}],
-        "ZoomLink": "",
+        "Materials": "OSINT-Overview",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -30,8 +30,8 @@
         "RoomFloorplan": "106.png",
         "VenueFloorplan": "venue106.png", 
         "id": 1,
-        "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "Materials": "PRESENTATION TITLE",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -48,7 +48,7 @@
         "VenueFloorplan": "venue106.png",  
         "id": 2,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -65,7 +65,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 3,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -83,7 +83,7 @@
         "id": 4,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -100,7 +100,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 5,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -117,7 +117,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 6,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -135,7 +135,7 @@
         "id": 7,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -152,7 +152,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 8,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -169,7 +169,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 9,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -187,7 +187,7 @@
         "id": 10,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -204,7 +204,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 11,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -221,7 +221,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 12,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -238,7 +238,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 13,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -255,7 +255,7 @@
         "VenueFloorplan": "venue304.png", 
         "id": 14,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#3e6990"
        },
        {
@@ -272,7 +272,7 @@
         "VenueFloorplan": "venue106.png",
         "id": 15,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -289,7 +289,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 16,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -306,7 +306,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 17,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -323,7 +323,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 18,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -341,7 +341,7 @@
         "id": 19,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -358,7 +358,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 20,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -375,7 +375,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 21,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -393,7 +393,7 @@
         "id": 22,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -410,7 +410,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 23,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -427,7 +427,7 @@
         "VenueFloorplan": "venue106H.png",
         "id": 24,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#f39b6d"
        },
        {
@@ -442,7 +442,7 @@
         "location": "Offsite",
         "id": 25,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#f67e7d"
        },
        {
@@ -459,7 +459,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 26,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -476,7 +476,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 27,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -493,7 +493,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 28,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -511,7 +511,7 @@
         "id": 29,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -528,7 +528,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 30,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -546,7 +546,7 @@
         "id": 31,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -563,7 +563,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 32,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -581,7 +581,7 @@
         "id": 33,
         "Break": true,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#bdb48a"
        },
        {
@@ -598,7 +598,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 34,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -615,7 +615,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 35,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -632,7 +632,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 36,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -647,7 +647,7 @@
         "location": "Hotel Restaurant",
         "id": 37,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -664,7 +664,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 38,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -681,7 +681,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 39,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -698,7 +698,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 40,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -715,7 +715,7 @@
         "VenueFloorplan": "venue106.png", 
         "id": 41,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#76b079"
        },
        {
@@ -730,7 +730,7 @@
         "location": "Offsite",
         "id": 42,
         "Materials": [{"filename": "file.txt"}, {"filename": "asdf.pdf"}],
-        "ZoomLink": "",
+        "ZoomLink":  "https://www.zoom.us/",
         "color": "#f67e7d"
        }
     ]

@@ -1,18 +1,18 @@
-import * as React from 'react';
+import React, {useState, useEffect} from "react"
 import AppBar from '@mui/material/AppBar';
 import LocalizedStrings from 'react-localization';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-//import IconButton from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-//import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-//import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-//import AccountCircle from '@mui/icons-material/AccountCircle';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import PropTypes from 'prop-types';
 import { Link as RouterLink, MemoryRouter } from 'react-router-dom';
 import { StaticRouter } from 'react-router-dom/server';
@@ -54,8 +54,6 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
-
 
   const LinkBehavior = React.forwardRef((props, ref) => {
     const { href, ...other } = props;
@@ -103,9 +101,7 @@ const ResponsiveAppBar = () => {
   });
 
 
-
   return (
-
 
     <AppBar position="static" color="success">
       <Container maxWidth="xl" color="#43A047">
@@ -129,7 +125,7 @@ const ResponsiveAppBar = () => {
           </Typography>
 
           <Box sx={{ flexGrow: 5, display: { xs: 'flex', md: 'none' } }}>
-          {/*<Tooltip title="Open settings">
+          <Tooltip title="Open settings">
               <IconButton
               size="large"
               aria-label="account of current user"
@@ -140,7 +136,7 @@ const ResponsiveAppBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            </Tooltip>*/}
+            </Tooltip>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -164,16 +160,16 @@ const ResponsiveAppBar = () => {
                   <Router>
                       <Stack spacing={2}>
                         <Button href="/calendar" color="success" target="_self" variant="contained">
-                        {strings.Calendar}
+                        {strings?strings.Calendar: null}
                         </Button>
                         <Button href="/venueinfo" color="success" target="_blank" variant="contained">
-                        {strings.Venueinfo}
+                        {strings?strings.Venueinfo: null}
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button> */}
                         <Button href="/faq" color="success" target="_self" variant="contained">
-                        {strings.Help}
+                        {strings?strings.Help: null}
                         </Button>
                         </Stack>
                     </Router>
@@ -186,10 +182,10 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: 'block', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -198,23 +194,23 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            ARMY WEEK 2022
+            {strings? strings.title: null}
           </Typography>
           <Box sx={{ flexGrow: 5, display: { xs: 'none', md: 'flex',} }}>
             <ButtonGroup spacing={2} direction="row" variant="contained" aria-label="outlined primary button group">
                 <ThemeProvider theme={theme}>
                     <Router>
                     <Button href="/calendar" color="success" target="_top" variant="contained">
-                        {strings.Calendar}
+                        {strings? strings.Calendar: null}
                         </Button>
                         <Button href="/venueinfo" color="success" target="_blank" variant="contained">
-                        {strings.Venueinfo}
+                        {strings? strings.Venueinfo: null}
                         </Button>
                         {/* <Button href="/messages" color="success" target="_blank" variant="contained">
                         Messages
                         </Button> */}
                         <Button href="/faq" color="success" target="_top" variant="contained">
-                        {strings.Help}
+                        {strings? strings.Help: null}
                         </Button>
                     </Router>
 
@@ -223,8 +219,8 @@ const ResponsiveAppBar = () => {
 
           </Box>
 
-          {/*<Box>
-            <Tooltip title="Open settings">
+          <Box>
+            {/* <Tooltip title="Open settings">
             <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -260,12 +256,13 @@ const ResponsiveAppBar = () => {
                   </Typography>
                 </MenuItem>
               ))}
-            </Menu>
-          </Box>*/}
+            </Menu> */}
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
 
   );
-};
+}
+
 export default ResponsiveAppBar;

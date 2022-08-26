@@ -1,41 +1,15 @@
 import React, {useState} from "react";
 import "antd/dist/antd.css";
 import {Modal, Button} from "antd";
-import PDF from "react-pdf-js";
+import Pdf from "react-pdf-js";
 import {ZoomInOutlined, ZoomOutOutlined} from '@ant-design/icons';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 
 
-const PdfViewer = ({pdf, onCancel, visible}) => {
+const PdfViewer = ({pdf, onCancel, visible, name, publicURL}) => {
 
-//     const [page, setPage] = useState(1);
-//    const [pages, setPages] = useState(null);
-//    const onDocumentError = (err) => {
-//       console.error('pdf viewer error:', err);
-//    }
-//    const onDocumentComplete = (numPages) =>{
-//       setPages(numPages)
-//    }
-
-//     return(
-//          <Modal visible={visible}
-//                 onCancel={onCancel}
-//                 maskClosable={false}
-//                 width={"30%"}
-//             >
-
-//         <PDF file={pdf}
-//         page={page}
-//         onDocumentError={onDocumentError}
-//         onDocumentComplete={onDocumentComplete}
-//             />
-//             <p style={{textAlign: 'center'}}>
-//                 Page {page} of {pages}
-//             </p>
-//    </Modal>
-//    )
-// };
-
-const [myPdf, setMyPdf] = useState(null);
+// const [myPdf, setMyPdf] = useState(null);
 const [page, setPage] = useState(1);
 const [pages, setPages] = useState(null);
 const [scale, setScale] = useState(1);
@@ -80,15 +54,32 @@ const zoomStyle = {
     cursor: 'pointer'
 }
 
+//This button looks nice but I can't get it to work
+// const Download = () => {
+//   const link = document.createElement("a");
+//   link.download = {name};
+//   link.href = {pdf};
+//   link.click();
+// };
+
 const footer = <div className="footer">
-   <Button onClick={()=>onPage(0)}>Previous</Button>
-   <div>
+{/* <Stack
+direction="row"
+justifyContent="space-between"> */}
+  {/* <Button onClick={Download}>Download</Button> */}
+  <div>
+  {/* <Stack direction="row"> */}
+  <Button onClick={()=>onPage(0)}>Previous</Button>
+  <Button onClick={()=>onPage(1)}>Next</Button>
+  {/* </Stack> */}
+  </div>
+{/* </Stack> */}
+    <div>  
    <span style={{textAlign: 'center'}}>Page {page} of {pages}</span>
        <ZoomOutOutlined style={{...zoomStyle, opacity: scale === 0.1 ? 0.5 : 1}} onClick={()=>onSetScale(0)}/>
        <ZoomInOutlined style={{...zoomStyle, opacity: scale === 2 ? 0.5 : 1}} onClick={()=>onSetScale(1)}/>
        <span>{Math.round(scale * 100)}%</span>
-    </div>
-   <Button onClick={()=>onPage(1)}>Next</Button>
+    </div>   
 </div>
 
 return (<Modal maskClosable={false}
@@ -101,7 +92,7 @@ return (<Modal maskClosable={false}
 
 >
 <div className="pdfWrapper">
-    <PDF
+    <Pdf
         file={pdf}
         onDocumentComplete={onDocumentComplete}
         onDocumentError={onDocumentError}
