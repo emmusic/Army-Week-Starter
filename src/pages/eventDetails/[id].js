@@ -106,11 +106,12 @@ function SelectedEvent(props) {
         {eventPresentation.map(x => {
               return (
                 <p>
-                <Typography variant="h6" component="div">
-                </Typography>
                 <PdfViewer pdf={x.node.publicURL}
                      onCancel={()=>setShowPdf(false)}
-                     visible={showPdf}/>
+                     visible={showPdf}
+                     name= {x.node.name}
+                     publicURL= {x.node.publicURL}
+                     />
           <PictureAsPdf onClick={()=>setShowPdf(!showPdf)}>
              Display Pdf
           </PictureAsPdf>

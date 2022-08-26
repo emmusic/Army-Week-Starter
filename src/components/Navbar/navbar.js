@@ -3,14 +3,14 @@ import AppBar from '@mui/material/AppBar';
 import LocalizedStrings from 'react-localization';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-//import IconButton from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-//import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-//import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 //import AccountCircle from '@mui/icons-material/AccountCircle';
 import PropTypes from 'prop-types';
@@ -129,7 +129,7 @@ const ResponsiveAppBar = () => {
           </Typography>
 
           <Box sx={{ flexGrow: 5, display: { xs: 'flex', md: 'none' } }}>
-          {/*<Tooltip title="Open settings">
+          <Tooltip title="Open settings">
               <IconButton
               size="large"
               aria-label="account of current user"
@@ -140,7 +140,7 @@ const ResponsiveAppBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            </Tooltip>*/}
+            </Tooltip>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -223,7 +223,7 @@ const ResponsiveAppBar = () => {
 
           </Box>
 
-          {/*<Box>
+          <Box>
             <Tooltip title="Open settings">
             <IconButton
                 size="large"
@@ -234,7 +234,7 @@ const ResponsiveAppBar = () => {
                 color="inherit"
                 textAlign="right"
               >
-                <AccountCircle />
+                {/* <AccountCircle /> */}
               </IconButton>
 
             </Tooltip>
@@ -261,7 +261,7 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>*/}
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
