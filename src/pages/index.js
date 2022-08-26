@@ -34,7 +34,7 @@ const moreLinks = [
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
-const IndexPage = () => (
+export default function IndexPage(props) {
   <Layout>
     <Seo title="Home" />
 
@@ -90,8 +90,6 @@ const IndexPage = () => (
     ))}
 
   </Layout>
-)
+}
 
 // const Head = () => <Seo title="Home" />
-
-export default IndexPage

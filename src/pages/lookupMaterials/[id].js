@@ -1,7 +1,6 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import LocalizedStrings from 'react-localization';
 import { useStaticQuery, graphql } from 'gatsby'
-
 
 //Components
 import Layout from "../../components/layout"
@@ -9,10 +8,6 @@ import Seo from "../../components/seo"
 // import ImagePreview from "../../components/imagePreview"
 // import downloadArray from "../../components/Download/downloadArray"
 import PdfViewer from '../../components/PdfViewer/pdfViewer.js'
-
-//Docs
-// import * as Docs from "../../docs"
-
 
 //MUI
 import Stack from '@mui/material/Stack';
@@ -51,7 +46,15 @@ let strings = new LocalizedStrings({
 })
 
 
-function LookupMaterials(props) {
+export default function LookupMaterials(props) { 
+  const [initialLocaleCode, setInitialLocaleCode] = useState('en')
+
+useEffect(() => {
+  if(window){
+    setInitialLocaleCode(window.navigator.userLanguage)
+  }
+}, [])
+
   const data = useStaticQuery(graphql`{
     allFile {
       edges {
@@ -67,7 +70,7 @@ function LookupMaterials(props) {
   }`);
 
     const eventId = props.params.id
-    const events = strings.events[navigator.language]
+    const events = strings.events[initialLocaleCode]
     var specificEvent = events[eventId];
 
     const eventPresentation = data.allFile.edges.filter(edges => edges.node.name === specificEvent.Materials)
@@ -77,8 +80,8 @@ function LookupMaterials(props) {
 
         <Layout>
 
-          <h5>{strings.title}</h5>
-          {eventPresentation.map(x => {
+          <h5>{strings ? strings.title : null}</h5>
+          {eventPresentation ? eventPresentation.map(x => {
               return (
                 <p>
                 <Typography variant="h6" component="div">
@@ -91,7 +94,7 @@ function LookupMaterials(props) {
           </PictureAsPdf>
                  </p>
               );
-            })}
+            }): null}
             {/* <PdfViewer pdf={pdf}
                      onCancel={()=>setShowPdf(false)}
                      visible={showPdf}/>
@@ -104,12 +107,12 @@ function LookupMaterials(props) {
       <Paper square sx={{ pb: '50px' }}>
         <Typography variant="h5"
         gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-        {specificEvent.title}
+        {specificEvent ? specificEvent.title : null}
         </Typography>
 
         {/* This is where we list the Documents  */}
         
-        {/* {specificEvent.Materials.map(material => {
+        {/* {{specificEvent ? specificEvent.Materials.map(material => {
           return (
             <ListItem>
             <ListItemButton href={'src/docs/event-1'}>
@@ -130,7 +133,7 @@ function LookupMaterials(props) {
             </ListItemButton>
             </ListItem>
           );
-     })} */}
+     }) : null} */}
 
       </Paper>
 
@@ -189,5 +192,3 @@ function LookupMaterials(props) {
 
 
 export const Head = () => <Seo title="Lookup Material" />
-
-export default LookupMaterials

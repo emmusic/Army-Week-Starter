@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useState, useEffect} from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import LocalizedStrings from 'react-localization';
 

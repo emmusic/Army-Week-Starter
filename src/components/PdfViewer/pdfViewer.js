@@ -54,25 +54,26 @@ const zoomStyle = {
     cursor: 'pointer'
 }
 
-const Download = () => {
-  const link = document.createElement("a");
-  link.download = {name};
-  link.href = {publicURL};
-  link.click();
-};
+//This button looks nice but I can't get it to work
+// const Download = () => {
+//   const link = document.createElement("a");
+//   link.download = {name};
+//   link.href = {pdf};
+//   link.click();
+// };
 
 const footer = <div className="footer">
-<Stack
+{/* <Stack
 direction="row"
-justifyContent="space-between">
-  <Button onClick={Download}>Download</Button>
+justifyContent="space-between"> */}
+  {/* <Button onClick={Download}>Download</Button> */}
   <div>
-  <Stack direction="row">
+  {/* <Stack direction="row"> */}
   <Button onClick={()=>onPage(0)}>Previous</Button>
   <Button onClick={()=>onPage(1)}>Next</Button>
-  </Stack>
+  {/* </Stack> */}
   </div>
-</Stack>
+{/* </Stack> */}
     <div>  
    <span style={{textAlign: 'center'}}>Page {page} of {pages}</span>
        <ZoomOutOutlined style={{...zoomStyle, opacity: scale === 0.1 ? 0.5 : 1}} onClick={()=>onSetScale(0)}/>
